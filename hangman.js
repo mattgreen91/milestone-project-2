@@ -58,7 +58,7 @@ function buildGame(score1, score2) {
 //function creates a keyboard layout
 function buildKeyboard() {
     //spits letters into individal arrays
-    let keys = "abcedefghijklmnopqrstuvwxyz".split("").map(letter =>
+    let keys = "abcdefghijklmnopqrstuvwxyz".split("").map(letter =>
         //arrays are assigned individual buttons
         `
         <button id='` + letter + `' onClick="guessAnswer('` + letter + `')">
