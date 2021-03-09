@@ -51,7 +51,7 @@ function buildGame(score1, score2) {
         hiddenAnswerLetters.push("-");
 
     //writes the hidden word on the screen
-    document.getElementById('word').innerHTML = hiddenAnswerLetters.join();
+    document.getElementById('word').innerHTML = hiddenAnswerLetters.join('');
 
 }
 
@@ -61,7 +61,7 @@ function buildKeyboard() {
     let keys = "abcdefghijklmnopqrstuvwxyz".split("").map(letter =>
         //arrays are assigned individual buttons
         `
-        <button id='` + letter + `' onClick="guessAnswer('` + letter + `')">
+        <button id='` + letter + `' class="letter" onClick="guessAnswer('` + letter + `')">
         ` + letter + `
         </button>
         `
@@ -77,12 +77,13 @@ function guessAnswer(key) {
     guess.indexOf(key) === -1 ? guess.push(key) : null;
     //this disables the button once it has been pressed
     document.getElementById(key).setAttribute('disabled', true);
+document.getElementById(key).style.backgroundColor = "#cdcdcd";
     let i = 0;
     //this loop searches if the key pressed matches any letters in the the game answer
     while (i < gameAnswer.length) {
         if (key === gameAnswerLetters[i]) {
             hiddenAnswerLetters[i] = gameAnswerLetters[i];
-            document.getElementById('word').innerHTML = hiddenAnswerLetters.join();
+            document.getElementById('word').innerHTML = hiddenAnswerLetters.join('');
         } i++;
     }
 }
