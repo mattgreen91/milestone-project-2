@@ -28,6 +28,7 @@ function changeWord() {
 //buildGame recieves the won and lost values from resetGame, or checkWon fuction
 function buildGame(score1, score2) {
   buildKeyboard();
+  startTimer();
 
   won = score1;
   lost = score2;
@@ -35,6 +36,7 @@ function buildGame(score1, score2) {
   incorrectGuesses = 0;
   correctLetters = 0;
   wrongLetters = 0;
+  timer = 0
 
   document.getElementById("man").src = "images/h0.gif";
   document.getElementById("won").innerHTML = won;
@@ -64,6 +66,11 @@ function buildGame(score1, score2) {
 
   //writes the hidden word on the screen
   document.getElementById("word").innerHTML = hiddenAnswerLetters.join("");
+}
+
+function startTimer() {
+    setInterval(function { let d = new Date();
+    document.getElementById("timer").innerHTML = d.toLocaleTimeString();, 2000});    
 }
 
 //function creates a keyboard layout
@@ -142,7 +149,7 @@ if ((wrongLetters / gameAnswer.length) == 1) {
     }
 
   if (incorrectGuesses == 5) {
-    alert("Hangman - You Lost! \n The correct word was " + gameAnswer);
+    alert("Hangman - You Lost! /n The correct word was " + gameAnswer);
     lost = lost +1;
     changeWord();
     }

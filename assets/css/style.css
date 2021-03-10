@@ -16,16 +16,27 @@ body {
 
 /* logo and navbar */
 
-.logo {
-  width: 20%;
+.logo-container {
+  width: 25%;
   height: 100px;
-  background-color: yellow;
+  background-color: black;
+  font-size: 40px;
+  line-height: 100px;
+  color: white;
+  text-align: left;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  float: left;
 }
 
 .nav {
-  width: 80%;
+  width: 70%;
   height: 100px;
-  background-color: saddlebrown;
+  background-color: black;
+  padding-right: 5%;
 }
 
 .mobile-nav {
@@ -35,34 +46,173 @@ body {
     display: none;
   }
 
+/* game guessing word */
+
+#word {
+  font-family: "Revalia", cursive;
+  font-size: 60px;
+  text-align: center;
+  background-color: white;
+}
+
+/* navigation bar at the top */
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  font-size: 20px;
+  height: 200px;
+  line-height: 200px;
+  float: right;
+
+}
+
+li {
+  float: left;
+  line-height: 40px;
+  padding-right: 50px;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  line-height: 80px;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: lightgray;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  line-height: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* keyboard */
+
+.letter {
+  width: 8%;
+  height: 50px;
+  border-radius: 12px;
+  background-color: goldenrod;
+  font-size: 14px;
+  align-content: center;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.button {
+  width: 30%;
+  height: 50px;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 15px;
+  align-content: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* hangman image */
+
+#man {
+  width: 90%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.man-outer {
+  display: inline-block
+}
+
 /* top 1/3 of body page */
 
 .body-top {
-  background-color: rgb(124, 145, 133);
+  background-color: white;
 }
 
 .body-top-title {
   width: 100%;
   height: 100px;
-  background-color: midnightblue;
+  background-color: grey;
+  font-size: 40px;
+  line-height: 100px;
+  color: white;
 }
 
 .top-left-column {
-  width: 33%;
-  height: 400px;
-  background-color: brown;
+  width: 25%;
+  height: 600px;
+  background-color: white;
 }
 
 .top-middle-column {
-  width: 34%;
-  height: 400px;
-  background-color: rgb(165, 153, 42);
+  width: 55%;
+  height: 600px;
+  background-color: white;
+}
+
+.row-1 {
+  height: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-2 {
+  height: 350px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-3 {
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .top-right-column {
-  width: 33%;
-  height: 400px;
-  background-color: rgb(88, 2, 2);
+  width: 20%;
+  height: 600px;
+  background-color: lightgray;
+  color: black;
 }
 
 /* middle 1/3 of body page */
@@ -74,7 +224,7 @@ body {
 .middle {
   width: 100%;
   height: 400px;
-  background-color: orange;
+  background-color: black;
 }
 
 /* bottom 1/3 of body page */
@@ -124,143 +274,145 @@ body {
 /* reduced sreeen sizes */
 
 @media screen and (max-width: 1393px) {
-  .top-left-column,
-  .top-middle-column,
-  .top-right-column,
-  .middle-left-column,
-  .middle-middle-column,
-  .middle-right-column {
-    width: 50%;
+  .top-left-column {
+    width: 30%;
+    height: 400px;
   }
-  .logo {
-    width: 40%;
+    
+  .top-middle-column {
+    width: 70%;
+    height: 400px;
   }
-  .nav {
-    width: 60%;
+  .top-right-column {
+    width: 100%;
+    height: 400px;
   }
+  
+  .row-1 {
+    height: 150px;
+  }
+
+  .row-2 {
+  height: 200px;
 }
 
-@media screen and (max-width: 943px) {
-  .top-left-column,
-  .top-middle-column,
-  .top-right-column,
-  .middle-left-column,
-  .middle-middle-column,
-  .middle-right-column {
-    width: 100%;
+  .man-outer {
+    width: 95%;
   }
-  .bottom-left-column-1,
-  .bottom-left-column-2,
-  .bottom-right-column-1,
-  .bottom-right-column-2 {
-    width: 50%;
-  }
-
-  .logo {
+   
+  .logo-container {
     width: 50%;
   }
 
   .nav {
-    width: 50%;
+    width: 45%;
   }
+.menu {
+  width: 130%;
 }
 
-@media screen and (max-width: 800px) {
-  .bottom-left-column-1,
-  .bottom-left-column-2,
-  .bottom-right-column-1,
-  .bottom-right-column-2 {
-    width: 100%;
-  }
+.top-right-column {
+  height: 180px;
+}
+
+@media screen and (max-width: 1100px) {
 
   .nav {
-      display: none;
+    display: none;
   }
 
   .mobile-nav {
-      display: block;
+    width: 50%;
+    display: block;
+  }
+
+@media screen and (max-width: 992px) {
+ 
+.row-1 {
+  width: 100%;
+  height: 150px;
+}
+
+.row-2 {
+  width: 100%;
+  height: 200px;
+}
+
+.man-outer {
+  width: 100%;
+}
+
+.top-left-column {
+  width: 40%;
+}
+  
+.top-middle-column {
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .man-outer {
+    width: 30%;
+  }
+
+  .top-left-column {
+    width: 100%;
+    height: 250px;
+  }
+    
+  .top-middle-column {
+    width: 100%;
+    height: 350px;
+  }
+
+  .row-1 {
+    height: 80px;
+  }
+
+  .scores h3 {
+    width: 25%;
+    display: inline-block;
+  }
+
+  .scores button {
+    width: 25%;
+    display: inline-block;
+  }
+
+  .top-right-column {
+    height: 80px;
+  }
+
+@media screen and (max-width: 600px) {
+  .man-outer {
+    width: 30%;
+  }
+
+  #man {
+    width: 100%;
+  }
+
+  .nav {
+    width: 70%;
+  }
+
+  .logo-container {
+    width: 30%;
   }
 }
 
-/* game guessing word */
+  @media screen and (max-width: 400px) {
+  }
 
-#word {
-  font-family: "Revalia", cursive;
-  font-size: 80px;
-  text-align: center;
-  background-color: grey;
-}
+  .mobile-nav {
+    width: 20%;
+  }
 
-/* navigation bar at the top */
+  .logo-container {
+    width: 80%;
+  }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-}
-
-li {
-  float: left;
-  line-height: 10px;
-}
-
-li a,
-.dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-}
-
-li a:hover,
-.dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* keyboard */
-
-.letter {
-  width: 14%;
-  height: 50px;
-  background-color: goldenrod;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
-/* hangman image */
-
-.man {
-  width: 50%;
+  .man-outer {
+    width: 35%;
+  }
 }
