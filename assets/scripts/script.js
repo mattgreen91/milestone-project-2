@@ -1,3 +1,5 @@
+// rocket button that when clicked will open mobile navigation menu and rotate rocket icon
+
 function openMenu() {
     let dropdownMenu = document.getElementById("mobile-nav-menu");
     let rocketIcon = document.getElementById('nav-rocket')
