@@ -36,7 +36,8 @@ function buildGame(score1, score2) {
   correctLetters = 0;
   wrongLetters = 0;
 
-  document.getElementById("man").src = "images/h0.gif";
+  document.getElementById("man").src = "assets/images/h0.gif";
+  document.getElementById("man").alt = incorrectGuesses + " of 5 lives remaining";
   document.getElementById("won").innerHTML = won;
   document.getElementById("lost").innerHTML = lost;
 
@@ -139,7 +140,7 @@ if ((wrongLetters / gameAnswer.length) == 1) {
       console.log("current incorrect score is " + incorrectGuesses);
       console.log("no. unmatched letters is " + wrongLetters);
       console.log("letters remaining is " + (gameAnswer.length - correctLetters));
-    document.getElementById("man").src = "images/h" + incorrectGuesses + ".gif";
+    document.getElementById("man").src = "assets/images/h" + incorrectGuesses + ".gif";
     document.getElementById("man").alt = incorrectGuesses + " of 5 lives remaining";
     }
 
