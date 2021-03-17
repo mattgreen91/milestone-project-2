@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Memory Game</title>
+
+  <title>Hangman Game</title>
 </head>
 
 <body>
   <header>
     <nav class="flex-row">
-      <div class="logo">LOGO HERE</div>
+      <div class="logo-container"><img class="logo" src="assets/images/saturn.jpg" alt="logo" />Space is Fun</div>
       <div class="nav">
         <ul class="menu">
           <li><a href="#home">Home Page</a></li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Learn about Space</a>
             <div class="dropdown-content">
-              <a href="#">Planets and Moons</a>
-              <a href="#">Stars and Galaxies</a>
-              <a href="#">Satellites</a>
+              <a href="#">The Solar System</a>
+              <a href="#">ISS Satellite</a>
             </div>
           </li>
           <li class="dropdown">
@@ -29,48 +29,62 @@
             <div class="dropdown-content">
               <a href="#">Hangman Game</a>
               <a href="#">Memory Game</a>
-              <a href="#">Knowledge Quiz</a>
+              <a href="#">Word Scrambler Game</a>
             </div>
           </li>
         </ul>
       </div>
-      <div class="mobile-nav">MOBILE NAV</div>
+      <div class="mobile-nav" onclick="openMenu()">Menu
+        <img id="nav-rocket" src="assets/images/rocket.gif" />
+        <div id="mobile-nav-menu">
+          <ul>
+            <li>Home Page</li>
+            <li>The Solar System</li>
+            <li>ISS Satellite</li>
+            <li>Hangman Game</li>
+            <li>Memory Game</li>
+            <li>Word Scrambler Game</li>
+          </ul>
+        </div>
+      </div>
+
     </nav>
     </header>
     
     <div class="flex-row">
-      <div class="body-top-title">Match the picures</div>
+      <div class="body-top-title">Can you guess the name of the Planet?</div>
     </div>
     
     <div class="body-top flex-row">
       <div class="top-left-column">
-        <div class="man-outer">
-        <img id="man" src="images/h0.gif" alt="5 lives remaining" />
-      </div>
+        <img id="man" src="assets/images/h0.gif" alt="0 of 5 lives remaining" />
       </div>
       <div class="top-middle-column">
         <div class="row-1">
-<span id="word"></span>
-        </div>     
+          <span id="word"></span>
+        </div>
         <div class="row-2">
-          <button onclick="resetGame()">Reset</button>
-          <button onclick="changeWord()">Change word</button>
+          <div class="letters-outer">
+            <div id="letters"></div>
+          </div>
+        </div>
+        <div class="row-3">     
+        <button class="button" onclick="changeWord()">Change word</button>
         </div>
     </div>
       <div class="top-right-column">
         <div class="scores">
           <h3>Games Lost: <span id="lost">0</span></h3>
           <h3>Games Won: <span id="won">0</span></h3>
-          <h3>Timer: <span id="timer"></span></h3>
+          <button class="button" onclick="resetGame()">Reset Game</button>
+          
         </div>
       </div>
     </div>
     
     <div class="body-middle flex-row">
       <div class="middle">
-        <div class="letters-outer">
-          <div id="letters"></div>
-        </div>
+
       </div>
     </div>
 
@@ -90,6 +104,7 @@
             <div class="footer">FOOTER</div>
         </div>
     </footer>
-    <script src="memorygame.js" type="text/javascript"></script>
+    <script src="assets/scripts/hangman.js" type="text/javascript"></script>
+    <script src="assets/scripts/script.js" type="text/javascript"></script>
 </body>
 </html>
