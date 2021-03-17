@@ -121,6 +121,17 @@ li.dropdown {
   display: block;
 }
 
+/* mobile navbar */
+
+.mobile-nav-menu {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  right: 0;
+  top: 84px;
+}
+
 /* keyboard */
 
 .letter {
