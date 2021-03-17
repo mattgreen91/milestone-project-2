@@ -67,6 +67,7 @@ body {
   width: 100%;
   height: 300px;
   right: 0;
+  z-index: 1;
   }
 
   #mobile-nav-menu ul {
@@ -331,6 +332,17 @@ li.dropdown {
   height: 100%;
   vertical-align: middle;
   display: inline-block;
+}
+
+/* memory game - centre content */
+
+.memorygame-area {
+display: block;
+width: 50%;
+}
+
+#my-memorygame {
+  position: relative
 }
 
 /* reduced sreeen sizes */
