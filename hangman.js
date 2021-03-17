@@ -113,7 +113,8 @@ function guessAnswer(key) {
   }
 
   if (gameAnswer == document.getElementById("word").innerHTML) {
-    alert("Well done! You won :)");
+    
+    alert("Well done! You won :) \n The word " + gameAnswer + " was correct");
     won = won + 1;
     changeWord();
 }
@@ -141,7 +142,7 @@ if ((wrongLetters / gameAnswer.length) == 1) {
     document.getElementById("man").src = "images/h" + incorrectGuesses + ".gif";
     }
 
-  if (incorrectGuesses == 5) {
+  if (incorrectGuesses == 6) {
     alert("Hangman - You Lost! \n The correct word was " + gameAnswer);
     lost = lost +1;
     changeWord();
