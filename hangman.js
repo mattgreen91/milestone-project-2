@@ -140,6 +140,7 @@ if ((wrongLetters / gameAnswer.length) == 1) {
       console.log("no. unmatched letters is " + wrongLetters);
       console.log("letters remaining is " + (gameAnswer.length - correctLetters));
     document.getElementById("man").src = "images/h" + incorrectGuesses + ".gif";
+    document.getElementById("man").alt = incorrectGuesses + " of 5 lives remaining";
     }
 
   if (incorrectGuesses == 6) {
