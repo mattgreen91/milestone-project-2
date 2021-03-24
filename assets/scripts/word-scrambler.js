@@ -1,3 +1,7 @@
+$.getJSON("./assets/json/word-scrambler.json", function(json) {
+    console.log(json);
+});
+
 // reset text field to blank  
 $('input[type="text"]').val("");
 // next game
