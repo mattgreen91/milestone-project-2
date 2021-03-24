@@ -15,7 +15,7 @@ const map = new google.maps.Map(document.getElementById("map"), {
   
 /* uses ISS image instead of default google marker */
 
-let image = 'https://icons.iconarchive.com/icons/goodstuff-no-nonsense/free-space/256/international-space-station-icon.png';
+let image = 'assets/images/iss.png';
 
   let marker = new google.maps.Marker({
     position: origin,
@@ -45,8 +45,8 @@ let track = {
 
 /* writes the longitute and latitude coordinates on the page */
 
-  document.getElementById('longitude').innerHTML = track.lng;
-  document.getElementById('latitude').innerHTML = track.lat;
+document.getElementById('latitude').innerHTML = "The latitude of ISS is " + track.lat;  
+document.getElementById('longitude').innerHTML = "The longitude of ISS is " + track.lng;
 
 /* updates the marker with the correct location using the coordinates */
 
