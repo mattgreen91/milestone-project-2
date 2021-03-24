@@ -1,0 +1,59 @@
+{
+    "galaxies" : [
+        "andromeda",
+        "milkyway",
+        "blackeye",
+        "cigar",
+        "antennae",
+        "virgo"
+    ],
+    "planets" : [
+        "mercury",
+        "venus",
+        "earth",
+        "mars",
+        "jupiter",
+        "saturn",
+        "uranus",
+        "neptune",
+        "pluto"
+    ],
+    "moons" : [
+        "europa",
+        "phobos",
+        "triton",
+        "charon",
+        "callisto",
+        "ganymede",
+        "titan",
+        "mimas",
+        "hyperion"
+    ],
+    "zodiacs" : [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces"
+    ],
+    "objects" : [
+        "asteroid",
+        "cosmos",
+        "planet",
+        "star",
+        "galaxy",
+        "moon",
+        "meteor",
+        "meteorite",
+        "meteoroid",
+        "nebula",
+        "satellite"
+    ]
+}
