@@ -1,9 +1,10 @@
-$.getJSON("./assets/json/word-scrambler.json", function(data) {
-    let array = JSON.parse(data);
-    console.log("data is" + data);
-    console.log("array is" + array);
+// imports categories from JSON file
+$.getJSON("./assets/json/word-scrambler.json", function(gameData) {
+    let planets = gameData.planets;
+    let galaxies = gameData.galaxies;
+    let moons = gameData.moons;
+    let objects = gameData.objects;
 });
-
 // reset text field to blank  
 $('input[type="text"]').val("");
 // next game
