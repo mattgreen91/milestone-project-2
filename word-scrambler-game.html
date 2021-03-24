@@ -52,12 +52,20 @@
     </header>
     
     <div class="flex-row">
-      <div class="body-top-title">Can you guess the name of the Planet?</div>
+      <div class="body-top-title">Can you guess the word?</div>
     </div>
     
     <div class="body-top flex-row">
       <div class="top-left-column">
-         
+        <form id="word-scrambler-game">
+          <label>
+              Unscramble these letters to form a word related to Space:<Br>
+              <span class="scrambled-word">SCRAMBLED WORD HERE</span>
+              <br>
+              <input id="scramble-guess" type="text">
+          </label>
+          <button type="submit">Check Answer</button>
+      </form>
       </div>
       <div class="top-middle-column">
         <div class="row-1">
@@ -104,6 +112,7 @@
             <div class="footer">FOOTER</div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="assets/scripts/hangman.js" type="text/javascript"></script>
     <script src="assets/scripts/navbar.js" type="text/javascript"></script>
 </body>

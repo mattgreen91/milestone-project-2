@@ -345,6 +345,12 @@ width: 50%;
   position: relative
 }
 
+/* scrambled word game */
+#scramble-guess {
+  font-size: 10; 
+  text-transform: uppercase;
+}
+
 /* iss map */
 #map {
   height: 300px;
