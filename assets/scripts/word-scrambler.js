@@ -1,5 +1,7 @@
-$.getJSON("./assets/json/word-scrambler.json", function(json) {
-    console.log(json);
+$.getJSON("./assets/json/word-scrambler.json", function(data) {
+    let array = JSON.parse(data);
+    console.log("data is" + data);
+    console.log("array is" + array);
 });
 
 // reset text field to blank  
