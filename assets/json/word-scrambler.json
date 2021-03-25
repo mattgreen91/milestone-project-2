@@ -7,6 +7,14 @@
         "antennae",
         "virgo"
     ],
+    "galaxies_scrambled" : [
+        "deardamon",
+        "ywylaimk",
+        "yekbecal",
+        "argic",
+        "enanaten",
+        "ogvri"
+    ],
     "planets" : [
         "mercury",
         "venus",
@@ -18,7 +26,18 @@
         "neptune",
         "pluto"
     ],
-    "moons" : [
+     "planets_scrambled" : [
+        "rucyerm",
+        "snuve",
+        "htaer",
+        "rams",
+        "pierutj",
+        "unrats",
+        "nrsuau",
+        "pneuten",
+        "otlup"
+    ],   
+        "moons" : [
         "europa",
         "phobos",
         "triton",
@@ -29,7 +48,18 @@
         "mimas",
         "hyperion"
     ],
-    "zodiacs" : [
+        "moons_scrambled" : [
+        "aureop",
+        "hoobsp",
+        "ritont",
+        "nahocr",
+        "laltcios",
+        "dmnyeage",
+        "nttai",
+        "immsa",
+        "enphyior"
+    ],
+        "zodiacs" : [
         "aries",
         "taurus",
         "gemini",
@@ -43,7 +73,21 @@
         "aquarius",
         "pisces"
     ],
-    "objects" : [
+        "zodiacs_scrambled" : [
+        "iesra",
+        "aurtsu",
+        "iingem",
+        "arencc",
+        "ole",
+        "irgov",
+        "railb",
+        "iropsco",
+        "atgstiusari",
+        "prranocci",
+        "risuuaaq",
+        "spices"
+    ],
+        "objects" : [
         "asteroid",
         "cosmos",
         "planet",
@@ -55,5 +99,18 @@
         "meteoroid",
         "nebula",
         "satellite"
+    ],
+        "objects_scrambled" : [
+        "saodiert",
+        "smosco",
+        "ltpean",
+        "rast",
+        "axgyla",
+        "onom",
+        "emerto",
+        "etmtreoei",
+        "eoretodim",
+        "banlue",
+        "ltelaiets"
     ]
 }
