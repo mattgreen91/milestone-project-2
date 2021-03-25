@@ -1,6 +1,9 @@
+// creates two variables the category and it's scrambled words
 
 var category;
 var categoryScrambled;
+
+// collects the objects arrays from JSON file
 
 $("#change-objects").on("click", function(event) {
 $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
@@ -10,6 +13,8 @@ $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
 });
 });
 
+// collects the galaxies arrays from JSON file
+
 $("#change-galaxies").on("click", function(gameData) {
 $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
     category = gameData.galaxies;
@@ -17,6 +22,8 @@ $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
     $.fn.rand(category, categoryScrambled);
 });
 });
+
+// collects the moons arrays from JSON file
 
 $("#change-moons").on("click", function(event) {
 $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
@@ -26,6 +33,8 @@ $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
 });
 });
 
+// collects the planets arrays from JSON file
+
 $("#change-planets").on("click", function(event) {
 $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
     category = gameData.planets;
@@ -33,6 +42,8 @@ $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
     $.fn.rand(category, categoryScrambled);
 });
 });
+
+// creats a random number, and takes the word in this array position
 
 $.fn.rand = function(category, categoryScrambled) {
 
