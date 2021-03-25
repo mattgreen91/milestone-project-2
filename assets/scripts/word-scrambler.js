@@ -1,25 +1,39 @@
-// imports categories from JSON file
-$.getJSON("./assets/json/word-scrambler.json", function(gameData) {
-    let planets = gameData.planets;
-    let galaxies = gameData.galaxies;
-    let moons = gameData.moons;
-    let objects = gameData.objects;
-});
 
-let category = objects;
+var category;
 
 $("#change-objects").on("click", function(event) {
-    category = objects;
+$.getJSON("./assets/json/word-scrambler.json", function(gameData) {
+    category = gameData.objects;
+    console.log(category);
+    $.fn.rand(category);
 });
-$("#change-galaxies").on("click", function(event) {
-category = galaxies;
 });
+
+$("#change-galaxies").on("click", function(gameData) {
+$.getJSON("./assets/json/word-scrambler.json", function(gameData) {
+    category = gameData.galaxies;
+    console.log(category);
+    $.fn.rand(category);
+});
+});
+
 $("#change-moons").on("click", function(event) {
-category = moons;
+$.getJSON("./assets/json/word-scrambler.json", function(gameData) {
+    category = gameData.moons;
+    console.log(category);
+    $.fn.rand(category);
 });
+});
+
 $("#change-planets").on("click", function(event) {
-category = planets;
+$.getJSON("./assets/json/word-scrambler.json", function(gameData) {
+    category = gameData.planets;
+    console.log(category); 
+    $.fn.rand(category);
 });
+});
+
+$.fn.rand = function(category) {
 
 let rand = Math.floor(Math.random() * category.length);
 let word = category[rand];
@@ -43,3 +57,4 @@ $("#word-scrambler-game").on("submit", function(event) {
     alert("Sorry, that was the wrong answer :(\nPlease try again")
   }
 });
+}
