@@ -68,8 +68,8 @@ $("#word-scrambler-game").on("submit", function(event) {
     $("#scramble-guess").val("");
     $.fn.scramble(category, categoryScrambled);
   } else {
-    console.log("you typed " + answer + ", and answer the computer wants you to guess is " + word + " which is incorrect")  
+    console.log("you typed " + answer + ", and answer the computer wants you to guess is " + word + " which is incorrect");  
     alert("Sorry, that was the wrong answer :(\nPlease try again");
   }
 });
-}
+};
