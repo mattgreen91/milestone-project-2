@@ -96,6 +96,20 @@ background-color: #f9f9f9;
   padding-left: 30px;
 }
 
+#mobile-nav-menu ul li a {
+  display: contents;
+  color: black;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+#mobile-nav-menu ul li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: lightgray;
+}
+
 /* navigation bar at the top */
 
 .menu {
@@ -119,14 +133,14 @@ li {
   padding-right: 50px;
 }
 
-li a,
+.nav ul li a,
 .dropbtn {
-  display: contents;
-  color: black;
+  display: block;
+  color: white;
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
-  line-height: 40px;
+  line-height: 60px;
 }
 
 li a:hover,

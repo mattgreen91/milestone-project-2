@@ -2,6 +2,9 @@
 
 var category;
 var categoryScrambled;
+var rand;
+var word;
+var scramble;
 
 // collects the objects arrays from JSON file
 
@@ -47,9 +50,9 @@ $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
 
 $.fn.scramble = function(category, categoryScrambled) {
 
-let rand = Math.floor(Math.random() * category.length);
-let word = category[rand].toUpperCase();
-let scramble = categoryScrambled[rand].toUpperCase();
+rand = Math.floor(Math.random() * category.length);
+word = category[rand].toUpperCase();
+scramble = categoryScrambled[rand].toUpperCase();
 
 console.log("i'm the new word to guess, before pressing submit "+ word);
 
@@ -57,19 +60,22 @@ console.log("i'm the new word to guess, before pressing submit "+ word);
 $(".scrambled-word").text(scramble);
 // when submit button is pressed
 $("#word-scrambler-game").on("submit", function(event) {
-  event.preventDefault();
   let answer = $("#scramble-guess").val().toUpperCase();
-  // checks if the answer typed matches the word
-  console.log(answer);
-  if (answer == word) {
-    console.log("you typed " + answer + ", and answer computer wanted to guess is " + word + " which is correct");
-    // displays the result
-    alert("Well done! You got it right :)");
-    $("#scramble-guess").val("");
-    $.fn.scramble(category, categoryScrambled);
-  } else {
-    console.log("you typed " + answer + ", and answer the computer wants you to guess is " + word + " which is incorrect");  
-    alert("Sorry, that was the wrong answer :(\nPlease try again");
-  }
+  if(answer){
+      event.preventDefault();
+    // checks if the answer typed matches the word
+    console.log(answer);
+    if (answer == word) {
+        console.log("you typed " + answer + ", and answer computer wanted to guess is " + word + " which is correct");
+        // displays the result
+        alert("Well done! You got it right :)");
+        $("#scramble-guess").val("");
+        $.fn.scramble(category, categoryScrambled);
+    } else {
+        console.log("you typed " + answer + ", and answer the computer wants you to guess is " + word + " which is incorrect");  
+        alert("Sorry, that was the wrong answer :(\nPlease try again");
+        $("#scramble-guess").val("");
+        }
+    }
 });
 };
