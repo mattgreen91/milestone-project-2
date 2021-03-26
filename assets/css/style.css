@@ -121,12 +121,12 @@ li {
 
 li a,
 .dropbtn {
-  display: inline-block;
-  color: white;
+  display: contents;
+  color: black;
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
-  line-height: 80px;
+  line-height: 40px;
 }
 
 li a:hover,
