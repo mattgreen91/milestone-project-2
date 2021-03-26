@@ -51,8 +51,7 @@ let rand = Math.floor(Math.random() * category.length);
 let word = category[rand].toUpperCase();
 let scramble = categoryScrambled[rand].toUpperCase();
 
-console.log(word);
-console.log(scramble);
+console.log("i'm the new word to guess, before pressing submit "+ word);
 
 // next game
 $(".scrambled-word").text(scramble);
@@ -63,13 +62,14 @@ $("#word-scrambler-game").on("submit", function(event) {
   // checks if the answer typed matches the word
   console.log(answer);
   if (answer == word) {
+    console.log("you typed " + answer + ", and answer computer wanted to guess is " + word + " which is correct");
     // displays the result
     alert("Well done! You got it right :)");
     $("#scramble-guess").val("");
     $.fn.scramble(category, categoryScrambled);
   } else {
+    console.log("you typed " + answer + ", and answer the computer wants you to guess is " + word + " which is incorrect")  
     alert("Sorry, that was the wrong answer :(\nPlease try again");
-    return
   }
 });
 }
