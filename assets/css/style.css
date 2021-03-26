@@ -140,7 +140,7 @@ li {
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
-  line-height: 60px;
+  line-height: 80px;
 }
 
 li a:hover,
@@ -168,6 +168,11 @@ li.dropdown {
   display: block;
   text-align: left;
   line-height: 20px;
+}
+
+.nav-sub {
+    color: black;
+    line-height: 20px;
 }
 
 .dropdown-content a:hover {
