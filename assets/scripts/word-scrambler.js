@@ -12,7 +12,8 @@ $("#change-objects").on("click", function(event) {
 $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
     category = gameData.objects;
     categoryScrambled = gameData.objects_scrambled;
-    $.fn.scramble(category, categoryScrambled);
+    $.fn.scramble();
+    console.log("after clicking category button, the list of words is " + category);
 });
 });
 
@@ -22,7 +23,8 @@ $("#change-galaxies").on("click", function(gameData) {
 $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
     category = gameData.galaxies;
     categoryScrambled = gameData.galaxies_scrambled;
-    $.fn.scramble(category, categoryScrambled);
+    $.fn.scramble();
+    console.log("after clicking category button, the list of words is " + category);
 });
 });
 
@@ -32,7 +34,8 @@ $("#change-moons").on("click", function(event) {
 $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
     category = gameData.moons;
     categoryScrambled = gameData.moons_scrambled;
-    $.fn.scramble(category, categoryScrambled);
+    $.fn.scramble();
+    console.log("after clicking category button, the list of words is " + category);
 });
 });
 
@@ -42,38 +45,41 @@ $("#change-planets").on("click", function(event) {
 $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
     category = gameData.planets;
     categoryScrambled = gameData.planets_scrambled;
-    $.fn.scramble(category, categoryScrambled);
+    $.fn.scramble();
+    console.log("after clicking category button, the list of words is " + category);
 });
 });
 
 // creats a random number, and takes the word in this array position
 
-$.fn.scramble = function(category, categoryScrambled) {
+$.fn.scramble = function() {
 
 rand = Math.floor(Math.random() * category.length);
 word = category[rand].toUpperCase();
 scramble = categoryScrambled[rand].toUpperCase();
 
-console.log("i'm the new word to guess, before pressing submit "+ word);
+console.log("i'm the list of words before the game starts "+ category);
 
 // next game
 $(".scrambled-word").text(scramble);
 // when submit button is pressed
 $("#word-scrambler-game").on("submit", function(event) {
+  console.log("after pressing submit, the the list of words is " + category);
   let answer = $("#scramble-guess").val().toUpperCase();
   if(answer){
+      console.log("after checking answer is answer, the list of words is " + category);
       event.preventDefault();
     // checks if the answer typed matches the word
     console.log(answer);
     if (answer == word) {
-        console.log("you typed " + answer + ", and answer computer wanted to guess is " + word + " which is correct");
+        console.log("when the answer is right, the list of words is " + category);
         // displays the result
         alert("Well done! You got it right :)");
         $("#scramble-guess").val("");
-        $.fn.scramble(category, categoryScrambled);
+        $.fn.scramble();
     } else {
-        console.log("you typed " + answer + ", and answer the computer wants you to guess is " + word + " which is incorrect");  
-        alert("Sorry, that was the wrong answer :(\nPlease try again");
+        console.log("when the answer is wrong, the list of words is " + category);
+        alert("Sorry " + answer + " was not correct")
         $("#scramble-guess").val("");
         }
     }
