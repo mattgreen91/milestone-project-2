@@ -277,6 +277,33 @@ li.dropdown {
   line-height: 100px;
 }
 
+/* ISS */
+
+.iss-middle {
+    background-color: black;
+    width: 100%;
+}
+
+/* iss map */
+#map {
+  height: 600px;
+  width: 1200px;
+  margin: auto;
+}
+
+  .iss-text {
+      font-size: 20px;
+      color: white;
+      line-height: 100px;
+      text-align: center;
+  }
+
+  .iss-info {
+      background-color: black;
+      height: 100px;
+      width: 100%;
+  }
+ 
 /* middle 1/3 of body page */
 
 .body-middle {
@@ -406,12 +433,6 @@ width: 100%;
 #scramble-guess {
   font-size: 10; 
   text-transform: uppercase;
-}
-
-/* iss map */
-#map {
-  height: 300px;
-  width: 600px;
 }
 
 /* reduced sreeen sizes */

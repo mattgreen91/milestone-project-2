@@ -8,7 +8,7 @@ function initMap() {
   /* creates a new map, and centers the map at 0,0 */
 
 const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 1,
+    zoom: 2,
     center: origin,
     streetViewControl: false,
     mapTypeId: "satellite",
