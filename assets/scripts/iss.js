@@ -10,8 +10,12 @@ function initMap() {
 const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 1,
     center: origin,
-
+    streetViewControl: false,
+    mapTypeId: "satellite",
+    scaleControl: true,
   });
+
+
   
 /* uses ISS image instead of default google marker */
 

@@ -7,60 +7,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>Hangman Game</title>
+  <title>Word Game</title>
 </head>
 
 <body>
   <header>
     <nav class="flex-row">
-      <div class="logo-container"><img class="logo" src="assets/images/saturn.jpg" alt="logo" />Space is Fun</div>
+      <div class="logo-container"><img class="logo" src="assets/images/saturn.jpg" alt="logo" />Space Fun</div>
       <div class="nav">
         <ul class="menu">
           <li><a href="index.html">Home Page</a></li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Learn about Space</a>
             <div class="dropdown-content">
-              <a href="solar-system.html" class="nav-sub"><p class="nav-sub">The Solar System</p></a>
+              <a href="solar-system.html" class="nav-sub"><p class="nav-sub">Solar System</p></a>
               <a href="iss.html"><p class="nav-sub">ISS Satellite</p></a>
             </div>
           </li>
           <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Fun and Games</a>
             <div class="dropdown-content">
-              <a href="hangman.html"><p class="nav-sub">Hangman Game</p></a>
+              <a href="hangman-game.html"><p class="nav-sub">Hangman Game</p></a>
               <a href="memory-game.html"><p class="nav-sub">Memory Game</p></a>
-              <a href="word-scrambler-game.html"><p class="nav-sub">Word Scrambler Game</p></a>
+              <a href="word-game.html"><p class="nav-sub">Word Game</p></a>
             </div>
           </li>
         </ul>
       </div>
-      <div class="mobile-nav" onclick="openMenu()">Menu
+      <div class="mobile-nav" onclick="openMenu()">
         <img id="nav-rocket" src="assets/images/rocket.gif" alt="menu" />
         <div id="mobile-nav-menu">
           <ul>
             <li><a href="index.html">Home Page</a></li>
-            <li><a href="solar-system.html">The Solar System</a></li>
+            <li><a href="solar-system.html">Solar System</a></li>
             <li><a href="iss.html">ISS Satellite</a></li>
-            <li><a href="hangman.html">Hangman Game</a></li>
+            <li><a href="hangman-game.html">Hangman Game</a></li>
             <li><a href="memory-game.html">Memory Game</a></li>
-            <li><a href="word-scrambler-game.html">Word Scrambler Game</a></li>
+            <li><a href="word-game.html">Word Game</a></li>
           </ul>
         </div>
       </div>
+
     </nav>
     </header>
     
     <div class="flex-row">
-      <div class="body-top-title">Can you guess the name of the Planet?</div>
+      <div class="body-top-title">Can you guess the word?</div>
     </div>
     
     <div class="body-top flex-row">
       <div class="top-left-column">
-        <img id="man" src="assets/images/h0.gif" alt="0 of 5 lives remaining" />
+        <form id="word-scrambler-game">
+          <label>
+              Unscramble these letters to form a word related to Space:<Br>
+              <span class="scrambled-word">SCRAMBLED WORD HERE</span>
+              <br>
+              <input id="scramble-guess" type="text">
+          </label>
+          <button type="submit">Check Answer</button>
+      </form>
       </div>
       <div class="top-middle-column">
         <div class="row-1">
-          <span id="word"></span>
+          <button class="button" id="change-objects">Things you might find in Space</button>
+          <button class="button" id="change-galaxies">Names of some of the Galaxies</button>
+          <button class="button" id="change-moons">Names of some of the Moons</button>
+          <button class="button" id="change-planets">Names of some of the Planets</button>
         </div>
         <div class="row-2">
           <div class="letters-outer">
@@ -103,7 +115,8 @@
             <div class="footer">FOOTER</div>
         </div>
     </footer>
-    <script src="assets/scripts/hangman.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="assets/scripts/word-scrambler.js" type="text/javascript"></script>
     <script src="assets/scripts/navbar.js" type="text/javascript"></script>
 </body>
 </html>
