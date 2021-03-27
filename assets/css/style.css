@@ -486,14 +486,47 @@ width: 50%;
   .scores h3 {
     width: 25%;
     display: inline-block;
+    line-height: 40px;
   }
 
   .scores button {
     width: 25%;
     display: inline-block;
+    line-height: 40px;
   }
 
   .top-right-column {
     height: 80px;
+  }
+}
+
+/* the below code fixes layout issues with the scores and reset button on smaller screens */
+
+@media screen and (max-width: 485px) {
+  .scores h3 {
+     line-height: 25px;
+  }
+}
+
+/* the below code fixes layout issues with the scores and reset button on smaller screens */
+
+@media screen and (max-width: 482px) {
+
+    .scores button {
+    line-height: 25px;
+    position: relative;
+    top: -10px;
+    height: 45px;
+  }
+}
+
+/* the below code fixes layout issues with the scores and reset button on smaller screens */
+
+  @media screen and (max-width: 415px) {
+  .scores button {
+    line-height: 25px;
+    position: relative;
+    top: -25px;
+    height: 60px;
   }
 }
