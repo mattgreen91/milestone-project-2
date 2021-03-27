@@ -34,6 +34,12 @@ body {
   float: left;
 }
 
+/* cursor changes when logo hovered over, so user knows this is a hyperlink */
+
+.logo:hover {
+cursor: pointer;
+}
+
 .nav {
   width: 70%;
   height: 100px;
