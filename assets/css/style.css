@@ -38,6 +38,7 @@ body {
 
 .logo:hover {
 cursor: pointer;
+opacity: 0.8;
 }
 
 .nav {
@@ -123,8 +124,8 @@ background-color: #f9f9f9;
   overflow: hidden;
   background-color: black;
   font-size: 20px;
-  height: 200px;
-  line-height: 200px;
+  height: 180px;
+  line-height: 180px;
   float: right;
 
 }
