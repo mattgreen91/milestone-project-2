@@ -8,7 +8,7 @@ function initMap() {
   /* creates a new map, and centers the map at 0,0 */
 
 const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 2,
+    zoom: 1.5,
     center: origin,
     streetViewControl: false,
     mapTypeId: "satellite",
@@ -56,6 +56,7 @@ document.getElementById('longitude').innerHTML = "The longitude of ISS is " + tr
 
 var latlng = new google.maps.LatLng(track.lat, track.lng);
 marker.setPosition(latlng);
+map.setCenter(latlng);
 
 /* refreshes every 5 seconds (5000 miliseconds) for "live" location */
 
