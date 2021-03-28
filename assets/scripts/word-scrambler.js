@@ -67,7 +67,11 @@ console.log("i'm the list of words before the game starts "+ category);
 
 // next game
 $(".scrambled-word").text(scramble);
-// when submit button is pressed
+// change word
+$("#change-word").on("click", function(event) {
+    $("#scramble-guess").val(""); 
+    $.fn.scramble();
+});
 $("#word-scrambler-game").on("submit", function(event) {
   console.log("after pressing submit, the the list of words is " + category);
   let answer = $("#scramble-guess").val().toUpperCase();

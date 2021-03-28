@@ -60,7 +60,7 @@
         <form id="word-scrambler-game">
           <label>
               Unscramble these letters to form a word:<Br>
-              <span class="scrambled-word">SCRAMBLED WORD HERE</span>
+              <span class="scrambled-word">Please select a category below first:</span>
               <br>
               <input id="scramble-guess" type="text">
           </label>
@@ -80,14 +80,14 @@
           </div>
         </div>
         <div class="row-3">     
-        <button class="button" onclick="changeWord()">Change word</button>
+        <button class="button" id="change-word" onclick="changeWord()">Change word</button>
         </div>
     </div>
       <div class="top-right-column">
         <div class="scores">
           <h3>Games Lost: <span id="lost">0</span></h3>
           <h3>Games Won: <span id="won">0</span></h3>
-          <button class="button" onclick="resetGame()">Reset Game</button>
+          <button class="button" onclick="onclick=location.reload();">Reset Game</button>
           
         </div>
       </div>
