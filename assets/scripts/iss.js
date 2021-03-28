@@ -47,10 +47,10 @@ let track = {
       lng : parseFloat(longitude)
   };
 
-/* writes the longitute and latitude coordinates on the page */
+/* writes the longitute and latitude coordinates on the page to 2 decimal places */
 
-document.getElementById('latitude').innerHTML = "The latitude of ISS is " + track.lat;  
-document.getElementById('longitude').innerHTML = "The longitude of ISS is " + track.lng;
+document.getElementById('latitude').innerHTML = "The latitude of ISS is " + track.lat.toFixed(2);  
+document.getElementById('longitude').innerHTML = "The longitude of ISS is " + track.lng.toFixed(2);
 
 /* updates the marker with the correct location using the coordinates */
 
