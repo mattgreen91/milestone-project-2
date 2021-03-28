@@ -5,6 +5,8 @@ var categoryScrambled;
 var rand;
 var word;
 var scramble;
+var won = 0;
+var lost = 0;
 
 // collects the objects arrays from JSON file
 
@@ -54,6 +56,9 @@ $.getJSON("./assets/json/word-scrambler.json", function(gameData) {
 
 $.fn.scramble = function() {
 
+$("#lost").text(lost);
+$("#won").text(won);
+
 rand = Math.floor(Math.random() * category.length);
 word = category[rand].toUpperCase();
 scramble = categoryScrambled[rand].toUpperCase();
@@ -74,13 +79,16 @@ $("#word-scrambler-game").on("submit", function(event) {
     if (answer == word) {
         console.log("when the answer is right, the list of words is " + category);
         // displays the result
-        alert("Well done! You got it right :)");
+        alert('Well done! "' + word.toLowerCase() + '" was the correct\nYou got it right :)');
+        won++;
         $("#scramble-guess").val("");
         $.fn.scramble();
     } else {
         console.log("when the answer is wrong, the list of words is " + category);
-        alert("Sorry " + answer + " was not correct")
+        alert('Sorry "' + answer.toLowerCase() + '" was not correct\nthe correct answer was "' + word.toLowerCase() + '"');
+        lost++
         $("#scramble-guess").val("");
+        $.fn.scramble();
         }
     }
 });
