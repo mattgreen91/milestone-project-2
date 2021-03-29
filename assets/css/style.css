@@ -358,6 +358,7 @@ li.dropdown {
 
 .solar-sun:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .solar-mercury {
@@ -373,6 +374,7 @@ li.dropdown {
 
 .solar-mercury:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .solar-venus {
@@ -388,6 +390,7 @@ li.dropdown {
 
 .solar-venus:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .solar-earth {
@@ -403,6 +406,7 @@ li.dropdown {
 
 .solar-earth:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .solar-mars {
@@ -418,6 +422,7 @@ li.dropdown {
 
 .solar-mars:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .solar-jupiter {
@@ -433,6 +438,7 @@ li.dropdown {
 
 .solar-jupiter:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .solar-saturn {
@@ -448,6 +454,7 @@ li.dropdown {
 
 .solar-saturn:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .solar-uranus {
@@ -463,6 +470,7 @@ li.dropdown {
 
 .solar-uranus:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .solar-neptune {
@@ -478,6 +486,7 @@ li.dropdown {
 
 .solar-neptune:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .solar-pluto {
@@ -493,6 +502,7 @@ li.dropdown {
 
 .solar-pluto:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 /* hangman game 'guessing word' setup */
