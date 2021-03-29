@@ -198,7 +198,8 @@ li.dropdown {
 /* top 1/3 of body page */
 
 .body-top {
-  background-color: white;
+  background: url("/assets/images/space-300.png");
+  height: 800px;
 }
 
 .body-top-title {
@@ -219,12 +220,10 @@ li.dropdown {
 .top-middle-column {
   width: 55%;
   height: 600px;
-  background-color: white;
 }
 
 .row-1 {
   height: 200px;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,7 +231,6 @@ li.dropdown {
 
 .row-2 {
   height: 350px;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,7 +238,6 @@ li.dropdown {
 
 .row-3 {
   height: 50px;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,6 +257,13 @@ li.dropdown {
 .memorygame-top {
     width: 100%;
     height: 50px;
+    background: url("/assets/images/space-300.png");
+}
+
+.memory-main-section {
+    width: 100%;
+    height: 800px;
+    background: url("/assets/images/space-300.png");
 }
 
 .memorygame-middle-column {
@@ -279,7 +283,7 @@ li.dropdown {
 /* ISS */
 
 .iss-middle {
-    background-color: black;
+    background: url("/assets/images/space-300.png");
     width: 100%;
 }
 
@@ -299,7 +303,7 @@ li.dropdown {
   }
 
   .iss-info {
-      background-color: black;
+      background: url("/assets/images/space-300.png");
       height: 100px;
       width: 100%;
       padding-top: 20px;
@@ -550,7 +554,7 @@ li.dropdown {
   font-family: "Revalia", cursive;
   font-size: 50px;
   text-align: center;
-  background-color: white;
+  color: white;
 }
 
 /* hangman game 'keyboard' setup */
