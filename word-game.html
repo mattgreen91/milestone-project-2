@@ -54,30 +54,25 @@
     <div class="flex-row">
       <div class="body-top-title">Word Game</div>
     </div>
-    
-    <div class="body-top flex-row">
-      <div class="word-game-top">
-        <form id="word-scrambler-game">
-          <label>
-              Unscramble these letters to form a word:<Br>
-              <span class="scrambled-word">Please select a category below first:</span>
-              <br>
-              <input id="scramble-guess" type="text">
-          </label>
-          <button type="submit">Check Answer</button>
-      </form>
-      </div>
-      <div class="top-middle-column">
+    <div class="flex-row">  
+    <div class="word-game-top">
         <div class="row-1">
-          <button class="button" id="change-objects">Things you might find in Space</button>
-          <button class="button" id="change-galaxies">Names of some of the Galaxies</button>
-          <button class="button" id="change-moons">Names of some of the Moons</button>
-          <button class="button" id="change-planets">Names of some of the Planets</button>
+          <h4>Select a Game Subject:</h4>
+          <button class="button word-game-btn" id="change-objects">Things you might find in Space</button>
+          <button class="button word-game-btn" id="change-galaxies">Names of some of the Galaxies</button>
+          <button class="button word-game-btn" id="change-moons">Names of some of the Moons</button>
+          <button class="button word-game-btn" id="change-planets">Names of some of the Planets</button>
         </div>
         <div class="row-2">
-          <div class="letters-outer">
-            <div id="letters"></div>
-          </div>
+          <form id="word-scrambler-game">
+            <label>
+                <h4>Unscramble these letters to form a word:</h4><Br>
+                <span class="scrambled-word">You have not chosen a subject.  Please choose a subject to begin the game</span>
+                <br>
+                <input id="scramble-guess" type="text">
+            </label>
+            <button type="submit" class="button">Check Answer</button>
+        </form>
         </div>
         <div class="row-3">     
         <button class="button" id="change-word" onclick="changeWord()">Change word</button>
