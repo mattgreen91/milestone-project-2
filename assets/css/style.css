@@ -343,7 +343,7 @@ li.dropdown {
 }
 
 .solar-sun {
-    background: url("img/sun-250.png");
+    background: url("/milestone-project-2/css/img/sun-250.png");
     background-size: contain;
     position: relative;
     padding: 0 0 0 0;
