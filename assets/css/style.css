@@ -331,7 +331,7 @@ li.dropdown {
 .solar-outer {
     width: 100%;
     height: 600px;
-    background: url("img/space-300.png");
+    background: url("../css/img/space-300.png");
 }
 
 .solar-large {
