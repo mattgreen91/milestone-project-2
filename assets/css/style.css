@@ -321,7 +321,123 @@ li.dropdown {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
- 
+
+/* solar system */
+
+.solar-outer {
+    width: 100%;
+    height: 600px;
+}
+
+.solar-large {
+    background-color: black;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    clear: both;
+    float: left;
+}
+
+.solar-sun {
+    background-color: orange;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 200px;
+    height: 200px;
+    top: 200px;
+    left: 400px;
+}
+
+.solar-mercury {
+    background-color: red;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 50px;
+    height: 50px;
+    top: 50px;
+    left: 350px;
+}
+
+.solar-venus {
+    background-color: lightblue;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 100px;
+    height: 100px;
+    top: -100px;
+    left: 600px;
+}
+
+.solar-earth {
+    background-color: green;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 550px;
+}
+
+.solar-mars {
+    background-color: lightgreen;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 250px;
+}
+
+.solar-jupiter {
+    background-color: palegreen;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 150px;
+    height: 150px;
+    top: -450px;
+    left: 150px;
+}
+
+.solar-saturn {
+    background-color: turquoise;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 150px;
+    height: 150px;
+    top: -350px;
+    left: 50px;
+}
+
+.solar-uranus {
+    background-color: purple;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 100px;
+    height: 100px;
+    top: -400px;
+    left: 900px;
+}
+
+.solar-neptune {
+    background-color: peachpuff;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 100px;
+    height: 100px;
+    top: -900px;
+    left: 850px;
+}
+
+.solar-pluto {
+    background-color: gray;
+    position: relative;
+    padding: 0 0 0 0;
+    width: 50px;
+    height: 50px;
+    top: -500px;
+    left: 0px;
+}
+
 /* middle 1/3 of body page */
 
 .body-middle {
