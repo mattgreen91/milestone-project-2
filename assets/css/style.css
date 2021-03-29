@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   text-align: center;
   font-family: "GFS Neohellenic", sans-serif;
-  background-color: black;
+  background-color: #0A0A0A;
   margin: 0;
   padding: 0;
 }
@@ -125,8 +125,8 @@ background-color: #f9f9f9;
   overflow: hidden;
   background-color: black;
   font-size: 20px;
-  height: 180px;
-  line-height: 180px;
+  height: 150px;
+  line-height: 150px;
   float: right;
 }
 
