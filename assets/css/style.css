@@ -578,8 +578,9 @@ width: 100%;
 
 /* scrambled word game */
 #scramble-guess {
-  font-size: 10; 
+  font-size: 20px; 
   text-transform: uppercase;
+  text-align: center;
   width: 300px;
   height: 50px;
   border-radius: 15px;
@@ -1154,6 +1155,9 @@ font-family: 'Revalia', cursive;
  .top-right-column {
   line-height: 80px;
 }
+
+.subject-options {
+  width: 90%;
 
 }
 
