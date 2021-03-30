@@ -1037,9 +1037,13 @@ font-size: 30px;
  }
 }
 
-/* the below code fixes layout issues with the scores and reset button on smaller screens */
+/* iphone 12 pro max */
 
-  @media screen and (max-width: 415px) {
+@media screen and (max-width: 428px) { }
+
+/* iphone XR/XS Max/11/11 pro max */
+
+  @media screen and (max-width: 414px) {
   .scores button {
     line-height: 25px;
     position: relative;
@@ -1156,6 +1160,24 @@ font-size: 30px;
   left: 20px;
   top: -650px;
 }
-
-
 }
+
+/* pixel 3, 3XL, iphone 12 / 12 pro / Galaxy S21 */
+@media screen and (max-width: 393px) { }
+
+/* iphone XS, X, 11 pro, 12 mini */
+@media screen and (max-width: 375px) { }
+
+/* Galaxy S9/Note 8/S8 */
+@media screen and (max-width: 360px) { }
+
+/* iphone 5/SE */
+@media screen and (max-width: 320px) {
+  #map {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+/* samsung galaxy fold */
+@media screen and (max-width: 280px) { }
