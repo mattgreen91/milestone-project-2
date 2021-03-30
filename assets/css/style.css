@@ -1182,7 +1182,23 @@ font-size: 30px;
     height: 250px;
     width: 250px;
   }
+  .memorygame-top {
+    height: 0px;
+  }
+    .memorygame-middle-column {
+      width: 87%;
+      height: 420px;
+}
 }
 
 /* samsung galaxy fold */
-@media screen and (max-width: 280px) { }
+@media screen and (max-width: 280px) {
+  .memorygame-middle-column {
+    width: 100%;
+    height: 420px;
+}
+.memorygame-top {
+  height: 0px;
+}
+
+}
