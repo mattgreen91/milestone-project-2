@@ -56,33 +56,36 @@
     </div>
     <div class="flex-row">  
     <div class="word-game-top">
-        <div class="row-1">
-          <h4>Select a Game Subject:</h4>
-          <button class="button word-game-btn" id="change-objects">Things you might find in Space</button>
-          <button class="button word-game-btn" id="change-galaxies">Names of some of the Galaxies</button>
-          <button class="button word-game-btn" id="change-moons">Names of some of the Moons</button>
-          <button class="button word-game-btn" id="change-planets">Names of some of the Planets</button>
+        <div class="word-row-1 flex-row">
+          <div class="subject-title"><h4>Select a Game Subject:</h4></div>
+          <div class="subject-options">
+          <button class="button word-game-btn" id="change-objects">General Space</button>
+          <button class="button word-game-btn" id="change-galaxies">Galaxy Names</button>
+          <button class="button word-game-btn" id="change-moons">Moon Names</button>
+          <button class="button word-game-btn" id="change-planets">Planet Names</button>
         </div>
-        <div class="row-2">
+        </div>
+        <div class="word-main-game flex-row">
+        <div class="word-row-2">
           <form id="word-scrambler-game">
             <label>
-                <h4>Unscramble these letters to form a word:</h4><Br>
-                <span class="scrambled-word">You have not chosen a subject.  Please choose a subject to begin the game</span>
-                <br>
+                <span class="scrambled-word"><h5>Please select a subject to begin the game</h5></span>
+                <h6>Unscramble the letters to form a word</h6>
                 <input id="scramble-guess" type="text">
             </label>
-            <button type="submit" class="button">Check Answer</button>
+            <button type="submit" class="button btn-check-answer">Check Answer</button>
+            <button class="button btn-check-answer" id="change-word" onclick="changeWord()">Change word</button>
         </form>
         </div>
-        <div class="row-3">     
-        <button class="button" id="change-word" onclick="changeWord()">Change word</button>
+        <div class="word-row-3">     
+        </div>
         </div>
     </div>
       <div class="top-right-column">
         <div class="scores">
           <h3>Games Lost: <span id="lost">0</span></h3>
           <h3>Games Won: <span id="won">0</span></h3>
-          <button class="button" onclick="onclick=location.reload();">Reset Game</button>
+          <button class="button btn-reset" onclick="onclick=location.reload();">Reset Game</button>
           
         </div>
       </div>
