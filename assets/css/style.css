@@ -1163,7 +1163,12 @@ font-size: 30px;
 }
 
 /* pixel 3, 3XL, iphone 12 / 12 pro / Galaxy S21 */
-@media screen and (max-width: 393px) { }
+@media screen and (max-width: 393px) { 
+.btn-reset {
+  width: 50px;
+}
+
+}
 
 /* iphone XS, X, 11 pro, 12 mini */
 @media screen and (max-width: 375px) { }
