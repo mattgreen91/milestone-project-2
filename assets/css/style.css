@@ -1125,27 +1125,27 @@ font-size: 30px;
 }
 
 .solar-sun {
-  left: 120px;
+  left: 160px;
   top: 200px;
 }
 
 .solar-mercury {
-  left: 120px;
+  left: 160px;
   top: 0px;
 }
 
 .solar-venus {
-  left: 220px;
+  left: 300px;
   top: -150px;
 }
 
 .solar-earth {
-  left: 220px;
+  left: 300px;
   top: -50px;
 }
 
 .solar-mars {
-  left: 120px;
+  left: 160px;
   top: -100px;
 }
 
@@ -1160,12 +1160,12 @@ font-size: 30px;
 }
 
 .solar-uranus {
-  left: 220px;
+  left: 300px;
   top: -550px;
 }
 
 .solar-neptune {
-  left: 120px;
+  left: 160px;
   top: -800px;
 }
 
@@ -1173,6 +1173,11 @@ font-size: 30px;
   left: 20px;
   top: -650px;
 }
+
+.solar-large {
+  padding-top: 50px;
+}
+
 }
 
 /* pixel 3, 3XL, iphone 12 / 12 pro / Galaxy S21 */
@@ -1185,6 +1190,57 @@ font-size: 30px;
   line-height: 100px;
 }
 
+
+.solar-sun {
+  left: 150px;
+  top: 200px;
+}
+
+.solar-mercury {
+  left: 150px;
+  top: 0px;
+}
+
+.solar-venus {
+  left: 280px;
+  top: -150px;
+}
+
+.solar-earth {
+  left: 280px;
+  top: -50px;
+}
+
+.solar-mars {
+  left: 150px;
+  top: -100px;
+}
+
+.solar-jupiter {
+  left: 20px;
+  top: -450px;
+}
+
+.solar-saturn {
+  left: 20px;
+  top: -450px;
+}
+
+.solar-uranus {
+  left: 280px;
+  top: -550px;
+}
+
+.solar-neptune {
+  left: 150px;
+  top: -800px;
+}
+
+.solar-pluto {
+  left: 20px;
+  top: -650px;
+}
+
 }
 
 /* iphone XS, X, 11 pro, 12 mini */
@@ -1193,6 +1249,57 @@ font-size: 30px;
     width: 75%;
     height: 420px;
   }
+
+.solar-sun {
+  left: 145px;
+  top: 200px;
+}
+
+.solar-mercury {
+  left: 145px;
+  top: 0px;
+}
+
+.solar-venus {
+  left: 260px;
+  top: -150px;
+}
+
+.solar-earth {
+  left: 260px;
+  top: -50px;
+}
+
+.solar-mars {
+  left: 145px;
+  top: -100px;
+}
+
+.solar-jupiter {
+  left: 20px;
+  top: -450px;
+}
+
+.solar-saturn {
+  left: 20px;
+  top: -450px;
+}
+
+.solar-uranus {
+  left: 260px;
+  top: -550px;
+}
+
+.solar-neptune {
+  left: 145px;
+  top: -800px;
+}
+
+.solar-pluto {
+  left: 20px;
+  top: -650px;
+}
+
 }
 
 /* Galaxy S9/Note 8/S8 */
@@ -1201,6 +1308,58 @@ font-size: 30px;
     width: 78%;
     height: 420px;
 }
+
+.solar-sun {
+  left: 130px;
+  top: 200px;
+}
+
+.solar-mercury {
+  left: 130px;
+  top: 0px;
+}
+
+.solar-venus {
+  left: 240px;
+  top: -150px;
+}
+
+.solar-earth {
+  left: 240px;
+  top: -50px;
+}
+
+.solar-mars {
+  left: 130px;
+  top: -100px;
+}
+
+.solar-jupiter {
+  left: 20px;
+  top: -450px;
+}
+
+.solar-saturn {
+  left: 20px;
+  top: -450px;
+}
+
+.solar-uranus {
+  left: 240px;
+  top: -550px;
+}
+
+.solar-neptune {
+  left: 130px;
+  top: -800px;
+}
+
+.solar-pluto {
+  left: 20px;
+  top: -650px;
+}
+
+
 }
 
 /* iphone 5/SE */
@@ -1216,6 +1375,61 @@ font-size: 30px;
       width: 87%;
       height: 420px;
 }
+
+.solar-sun {
+  left: 110px;
+  top: 200px;
+}
+
+.solar-mercury {
+  left: 110px;
+  top: 0px;
+}
+
+.solar-venus {
+  left: 200px;
+  top: -150px;
+}
+
+.solar-earth {
+  left: 200px;
+  top: -50px;
+}
+
+.solar-mars {
+  left: 110px;
+  top: -100px;
+}
+
+.solar-jupiter {
+  left: 10px;
+  top: -450px;
+}
+
+.solar-saturn {
+  left: 10px;
+  top: -450px;
+}
+
+.solar-uranus {
+  left: 200px;
+  top: -550px;
+}
+
+.solar-neptune {
+  left: 110px;
+  top: -800px;
+}
+
+.solar-pluto {
+  left: 10px;
+  top: -650px;
+}
+
+.solar-large {
+  padding-top: 0px;
+}
+
 }
 
 /* samsung galaxy fold */
@@ -1226,6 +1440,76 @@ font-size: 30px;
 }
 .memorygame-top {
   height: 0px;
+}
+
+.solar-sun {
+  left: 95px;
+  top: 200px;
+  height: 90px;
+  width: 90px;
+}
+
+.solar-mercury {
+  left: 95px;
+  top: 20px;
+  height: 90px;
+  width: 90px;
+}
+
+.solar-venus {
+  left: 185px;
+  top: -130px;
+  height: 90px;
+  width: 90px;
+}
+
+.solar-earth {
+  left: 185px;
+  top: -25px;
+  height: 90px;
+  width: 90px;
+}
+
+.solar-mars {
+  left: 95px;
+  top: -65px;
+  height: 90px;
+  width: 90px;
+}
+
+.solar-jupiter {
+  left: 5px;
+  top: -400px;
+  height: 90px;
+  width: 90px;
+}
+
+.solar-saturn {
+  left: 5px;
+  top: -390px;
+  height: 90px;
+  width: 90px;
+}
+
+.solar-uranus {
+  left: 185px;
+  top: -485px;
+  height: 90px;
+  width: 90px;
+}
+
+.solar-neptune {
+  left: 95px;
+  top: -700px;
+  height: 90px;
+  width: 90px;
+}
+
+.solar-pluto {
+  left: 5px;
+  top: -560px;
+  height: 90px;
+  width: 90px;
 }
 
 }
