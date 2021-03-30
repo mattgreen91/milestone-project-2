@@ -1144,6 +1144,11 @@ font-family: 'Revalia', cursive;
  .top-right-column {
   line-height: 100px;
 }
+
+#word-scrambler-game {
+  margin-top: 20px
+}
+
 }
 
 /* iphone 12 pro max */
