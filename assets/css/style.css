@@ -1044,7 +1044,11 @@ font-size: 30px;
 /* iphone XR/XS Max/11/11 pro max */
 
   @media screen and (max-width: 414px) {
-  .scores button {
+    .memorygame-top {
+      height: 0px;
+    }
+  
+    .scores button {
     line-height: 25px;
     position: relative;
     top: -25px;
