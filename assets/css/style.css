@@ -270,7 +270,7 @@ li.dropdown {
 }
 
 .memorygame-middle-column {
-    width: 20%;
+    width: 18%;
     height: 500px;
     clear: both;
     margin: auto;
@@ -945,6 +945,7 @@ font-size: 30px;
  
  .memorygame-middle-column {
   width: 60%;
+ }
    
  .solar-sun {
   height: 100px;
@@ -1039,7 +1040,11 @@ font-size: 30px;
 
 /* iphone 12 pro max */
 
-@media screen and (max-width: 428px) { }
+@media screen and (max-width: 428px) {
+  .memorygame-middle-column {
+    width: 65%;
+ }
+}
 
 /* iphone XR/XS Max/11/11 pro max */
 
@@ -1206,7 +1211,7 @@ font-size: 30px;
 }
 
 /* samsung galaxy fold */
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 300px) {
   .memorygame-middle-column {
     width: 100%;
     height: 420px;
