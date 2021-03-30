@@ -942,9 +942,9 @@ font-size: 30px;
 }
 
 @media screen and (max-width: 550px) {
-  .memorygame-middle-column {
-    width: 60%;
- }
+ 
+ .memorygame-middle-column {
+  width: 60%;
    
  .solar-sun {
   height: 100px;
@@ -1055,7 +1055,7 @@ font-size: 30px;
     height: 60px;
   }
  .memorygame-middle-column {
-    width: 85%;
+    width: 70%;
  }
 
  #map {
@@ -1175,10 +1175,20 @@ font-size: 30px;
 }
 
 /* iphone XS, X, 11 pro, 12 mini */
-@media screen and (max-width: 375px) { }
+@media screen and (max-width: 375px) {
+  .memorygame-middle-column {
+    width: 75%;
+    height: 420px;
+  }
+}
 
 /* Galaxy S9/Note 8/S8 */
-@media screen and (max-width: 360px) { }
+@media screen and (max-width: 360px) {
+  .memorygame-middle-column {
+    width: 78%;
+    height: 420px;
+}
+}
 
 /* iphone 5/SE */
 @media screen and (max-width: 320px) {
