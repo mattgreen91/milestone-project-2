@@ -8,8 +8,8 @@
   
   /* styles of the card to show */
   .quizy-memorygame .mgcard-show{
-    width:120px;
-    height:120px;
+    width:140px;
+    height:140px;
     background:url('img/mg-mcard.png');
   }
   
