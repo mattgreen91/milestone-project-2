@@ -502,6 +502,138 @@ li.dropdown {
     left: 0px;
 }
 
+.close-window {
+  color: white;
+  float: right;
+  font-size: 75px;
+}
+
+.close-window:hover {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sun {
+  background-image: url("img/sun-card.png");
+  background-size: contain;
+  height: 750px;
+  width: 525px;
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 500px
+}
+
+#mercury {
+  background-image: url("img/mercury-card.png");
+  background-size: contain;
+  height: 750px;
+  width: 525px;
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 500px
+}
+
+#venus {
+  background-image: url("img/venus-card.png");
+  background-size: contain;
+  height: 750px;
+  width: 525px;
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 500px
+}
+
+#earth {
+  background-image: url("img/earth-card.png");
+  background-size: contain;
+  height: 750px;
+  width: 525px;
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 500px
+}
+
+#mars {
+  background-image: url("img/mars-card.png");
+  background-size: contain;
+  height: 750px;
+  width: 525px;
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 500px
+}
+
+#jupiter {
+  background-image: url("img/jupiter-card.png");
+  background-size: contain;
+  height: 750px;
+  width: 525px;
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 500px
+}
+
+#saturn {
+  background-image: url("img/saturn-card.png");
+  background-size: contain;
+  height: 750px;
+  width: 525px;
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 500px
+}
+
+#uranus {
+  background-image: url("img/uranus-card.png");
+  background-size: contain;
+  height: 750px;
+  width: 525px;
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 500px
+}
+
+#neptune {
+  background-image: url("img/neptune-card.png");
+  background-size: contain;
+  height: 750px;
+  width: 525px;
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 500px
+}
+
+#pluto {
+  background-image: url("img/pluto-card.png");
+  background-size: contain;
+  height: 750px;
+  width: 525px;
+  position: fixed;
+  margin: 0 auto;
+  display: none;
+  z-index: 1;
+  left: 500px
+}
+
 .solar-pluto:hover {
     opacity: 0.8;
     cursor: pointer;
@@ -1297,6 +1429,7 @@ font-family: 'Revalia', cursive;
 .solar-large {
   padding-top: 50px;
 }
+
 }
 
 /* pixel 3, 3XL, iphone 12 / 12 pro / Galaxy S21 */
