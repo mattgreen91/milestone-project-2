@@ -240,12 +240,23 @@ li.dropdown {
 
 .welcome {
   width: 40%;
-  height: 600px;
-  background-color: yellow;
+  height: 500px;
   z-index: 1;
   margin-right: 5%;
   margin-left: 5%;
-  margin-top: 50px;
+  margin-top: 150px;
+}
+
+#welcome {
+  color: white;
+  font-size: 50px;
+  font-family: 'Revalia', cursive;
+}
+
+#welcome-sub {
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 .rocket {
@@ -1123,7 +1134,11 @@ font-family: 'Revalia', cursive;
 
 @media screen and (max-width: 685px) {
   
-   .solar-outer {
+  #welcome {
+    font-size: 40px;
+  } 
+  
+  .solar-outer {
        height: 650px;
    }
    
@@ -1307,13 +1322,12 @@ th {
 
 .rocket-outer {
   width: 100%;
-  height: 250px;
+  height: 150px;
 }
 
 .welcome {
   width: 100%;
   height: 300px;
-  background-color: yellow;
 }
 
 .rocket {
@@ -1924,6 +1938,11 @@ h6 {
 
 /* samsung galaxy fold */
 @media screen and (max-width: 300px) {
+
+  #welcome-sub {
+    font-size: 14px;
+  }
+
   .memorygame-middle-column {
     width: 100%;
     height: 420px;
