@@ -554,9 +554,10 @@ li.dropdown {
 }
 
 .close-window {
-  color: white;
+  color: black;
   float: right;
   font-size: 75px;
+  margin-right: 20px;
 }
 
 .close-window:hover {
@@ -568,6 +569,7 @@ li.dropdown {
  .pop-up-card { 
   height: 600px;
   width: 800px;
+  border-radius: 20px;
   position: fixed;
   margin: 0 auto;
   display: none;
