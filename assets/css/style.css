@@ -396,6 +396,12 @@ li.dropdown {
 
 /* solar system */
 
+.solar-title {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
 .solar-outer {
     width: 100%;
     height: 600px;
@@ -1855,14 +1861,22 @@ h6 {
       height: 420px;
 }
 
+.solar-title > h4 {
+font-size: 14px;
+}
+
+.solar-title {
+  top: -10px;
+}
+
 .solar-sun {
   left: 110px;
-  top: 200px;
+  top: 180px;
 }
 
 .solar-mercury {
   left: 110px;
-  top: 0px;
+  top: -20px;
 }
 
 .solar-venus {
@@ -1877,17 +1891,17 @@ h6 {
 
 .solar-mars {
   left: 110px;
-  top: -100px;
+  top: -120px;
 }
 
 .solar-jupiter {
   left: 10px;
-  top: -450px;
+  top: -470px;
 }
 
 .solar-saturn {
   left: 10px;
-  top: -450px;
+  top: -470px;
 }
 
 .solar-uranus {
@@ -1897,12 +1911,12 @@ h6 {
 
 .solar-neptune {
   left: 110px;
-  top: -800px;
+  top: -820px;
 }
 
 .solar-pluto {
   left: 10px;
-  top: -650px;
+  top: -670px;
 }
 
 .solar-large {
