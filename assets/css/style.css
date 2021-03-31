@@ -731,10 +731,23 @@ width: 100%;
   font-size: 20px; 
   text-transform: uppercase;
   text-align: center;
-  width: 300px;
+  width: 40%;
   height: 50px;
   border-radius: 15px;
   margin-bottom: 50px;
+  left: -100px;
+  position: relative;
+}
+
+#word-submit {
+  position: relative;
+  left: -120px;
+}
+
+#change-word {
+  position: relative;
+    left: 295px;
+    top: -102px;
 }
 
 .word-game-top {
@@ -912,6 +925,11 @@ font-family: 'Revalia', cursive;
 .word-game-btn {
   margin-left: 0;
   margin-right: 0;
+}
+
+#change-word {
+    left: 250px;
+    top: -102px;
 }
 }
 
@@ -1099,6 +1117,20 @@ font-family: 'Revalia', cursive;
   width: 600px;
 }
 
+#scramble-guess {
+  left: 20px;
+  width: 450px;
+}
+
+#word-submit {
+  left: 0px;
+}
+
+#change-word {
+    left: 0px;
+    top: 0px;
+
+}
 }
 
 @media screen and (max-width: 750px) {
@@ -1136,6 +1168,19 @@ font-family: 'Revalia', cursive;
   top: 20%;
 }
 
+#word-submit {
+  left: -100px;
+  top: -30px;
+}
+
+#change-word {
+    left: 100px;
+    top: -100px;
+}
+
+#scramble-guess {
+  left: 0;
+}
 }
 
 @media screen and (max-width: 685px) {
@@ -1144,6 +1189,16 @@ font-family: 'Revalia', cursive;
     font-size: 40px;
   } 
   
+    #word-submit {
+    left: -120px;
+    top: -30px;
+  }
+  
+  #change-word {
+      left: 70px;
+      top: -100px;
+  }
+
   .solar-outer {
        height: 650px;
    }
@@ -1244,6 +1299,17 @@ th {
   #scramble-guess {
     margin-bottom: 10px;
   }
+
+  #word-submit {
+    left: -90px;
+    top: 10px;
+  }
+  
+  #change-word {
+      left: 90px;
+      top: -60px;
+  }
+
 
   .btn-check-answer {
     width: 150px;
@@ -1811,9 +1877,20 @@ h6 {
 
 #scramble-guess {
   width: 90%;
-  height: 30px;
+  height: 40px;
   margin-top: 10px;
   margin-bottom: 20px;
+  top: -20px;
+}
+
+#word-submit {
+  left: -70px;
+  top: -20px;
+}
+
+#change-word {
+    left: 70px;
+    top: -90px;
 }
 
 .btn-check-answer {
