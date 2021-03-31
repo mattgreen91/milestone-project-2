@@ -88,20 +88,20 @@ width: 100%;
 height: 50px;
 line-height: 50px;
 font-size: 20px;
-background-color: #f9f9f9;
+background-color: #e6e6e6;
   }
 
   #mobile-nav-menu ul li:hover {
-    background-color: #f1f1f1;
+    background-color: #fafafa;
       }
 
 #nav-rocket {
   
-  width: 60px;
+  width: 100px;
   height: 100%;
   float: right;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 5%;
+
 }
 
 #mobile-nav-menu ul li a {
@@ -1699,6 +1699,10 @@ h6 {
 
 /* iphone 5/SE */
 @media screen and (max-width: 320px) {
+  #mobile-nav-menu ul li {
+    font-size: 16px;
+  }
+  
   #map {
     height: 250px;
     width: 250px;

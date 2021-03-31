@@ -5,7 +5,7 @@ function openMenu() {
     let rocketIcon = document.getElementById('nav-rocket')
     if (dropdownMenu.style.display === "none") {
         dropdownMenu.style.display = "block";
-        rocketIcon.style.transform = "rotate(90deg)";
+        rocketIcon.style.transform = "rotate(300deg)";
     } else {
         dropdownMenu.style.display = "none";
         rocketIcon.style.transform = "rotate(0deg)";
