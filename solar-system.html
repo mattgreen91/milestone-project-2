@@ -1,68 +1,88 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <title>Solar System</title>
+  </head>
 
-  <title>Solar System</title>
-</head>
-
-<body>
-  <header>
-    <nav class="flex-row">
-      <div class="logo-container"><img class="logo" src="assets/images/space_logo.png" alt="logo" onclick="location.href='index.html';" /></div>
-      <div class="nav">
-         <ul class="menu">
-          <li><a href="index.html">Home Page</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Learn about Space</a>
-            <div class="dropdown-content">
-              <a href="solar-system.html" class="nav-sub"><p class="nav-sub">Solar System</p></a>
-              <a href="iss.html"><p class="nav-sub">ISS Satellite</p></a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Fun and Games</a>
-            <div class="dropdown-content">
-              <a href="hangman-game.html"><p class="nav-sub">Hangman Game</p></a>
-              <a href="memory-game.html"><p class="nav-sub">Memory Game</p></a>
-              <a href="word-game.html"><p class="nav-sub">Word Game</p></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="mobile-nav" onclick="openMenu()">
-        <img id="nav-rocket" src="assets/images/rocket_logo.png" alt="menu" />
-        <div id="mobile-nav-menu">
-          <ul>
-            <li onclick="location.href='index.html';">Home Page</li>
-            <li onclick="location.href='solar-system.html';">Solar System</li>
-            <li onclick="location.href='iss.html';">ISS Satellite</li>
-            <li onclick="location.href='hangman-game.html';">Hangman Game</li>
-            <li onclick="location.href='memory-game.html';">Memory Game</li>
-            <li onclick="location.href='word-game.html';">Word Game</li>
+  <body>
+    <header>
+      <nav class="flex-row">
+        <!-- webpage logo -->
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="assets/images/space_logo.png"
+            alt="logo"
+            onclick="location.href='index.html';"
+          />
+        </div>
+        
+        <!-- navigation menu -->
+        <div class="nav">
+          <ul class="menu">
+            <li><a href="index.html">Home Page</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn about Space</a>
+              <div class="dropdown-content">
+                <a href="solar-system.html" class="nav-sub"
+                  ><p class="nav-sub">Solar System</p></a
+                >
+                <a href="iss.html"><p class="nav-sub">ISS Satellite</p></a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Fun and Games</a>
+              <div class="dropdown-content">
+                <a href="hangman-game.html"
+                  ><p class="nav-sub">Hangman Game</p></a
+                >
+                <a href="memory-game.html"
+                  ><p class="nav-sub">Memory Game</p></a
+                >
+                <a href="word-game.html"><p class="nav-sub">Word Game</p></a>
+              </div>
+            </li>
           </ul>
         </div>
-      </div>
-    </nav>
+        <!-- mobile navigation menu -->
+        <div class="mobile-nav" onclick="openMenu()">
+          <img id="nav-rocket" src="assets/images/rocket_logo.png" alt="menu" />
+          <div id="mobile-nav-menu">
+            <ul>
+              <li onclick="location.href='index.html';">Home Page</li>
+              <li onclick="location.href='solar-system.html';">Solar System</li>
+              <li onclick="location.href='iss.html';">ISS Satellite</li>
+              <li onclick="location.href='hangman-game.html';">Hangman Game</li>
+              <li onclick="location.href='memory-game.html';">Memory Game</li>
+              <li onclick="location.href='word-game.html';">Word Game</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    
+
     <div class="flex-row">
       <div class="body-top-title">Solar System</div>
     </div>
     <div class="solar-title"><h4>Click on a planet below:</h4></div>
     <div class="pop-ups">
+      <!-- pop up card for sun -->
       <div id="sun" class="pop-up-card" onclick="close_sun()">
         <span class="close-window" onclick="close_sun()">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
-            <img src="assets/css/img/sun-trans.png" alt="sun" class="planet-pic">
+            <img
+              src="assets/css/img/sun-trans.png"
+              alt="sun"
+              class="planet-pic"
+            />
           </div>
-          <div class="planet-title">The Sun
-          </div>
+          <div class="planet-title">The Sun</div>
         </div>
         <div class="planet-description">
           <table>
@@ -94,33 +114,37 @@
               <th>Planets:</th>
               <td>9</td>
             </tr>
-            </table>
+          </table>
         </div>
         <div class="planet-description-vertical">
-              Diameter:
-              <br>1,392,700 km<br><br>
-              Mass:
-              <br>1.99 x 10^30 kg<br><br>
-              Distance from Earth:
-              <br>149,470,000 km<br><br>
-              Orbit Period:
-              <br>230,000,000 years<br><br>
-              Day length:
-              <br>24.5 days<br><br>
-              Surface Temperature:
-              <br>5,505°C<br><br>
-              Planets:
-              <br>9
+          Diameter:
+          <br />1,392,700 km<br /><br />
+          Mass:
+          <br />1.99 x 10^30 kg<br /><br />
+          Distance from Earth:
+          <br />149,470,000 km<br /><br />
+          Orbit Period:
+          <br />230,000,000 years<br /><br />
+          Day length:
+          <br />24.5 days<br /><br />
+          Surface Temperature:
+          <br />5,505°C<br /><br />
+          Planets:
+          <br />9
         </div>
       </div>
+      <!-- pop up card for mercury -->
       <div id="mercury" class="pop-up-card" onclick="close_mercury()">
         <span class="close-window" onclick="close_mercury()">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
-            <img src="assets/css/img/mercury.png" alt="mercury" class="planet-pic">
+            <img
+              src="assets/css/img/mercury.png"
+              alt="mercury"
+              class="planet-pic"
+            />
           </div>
-          <div class="planet-title">Mercury
-          </div>
+          <div class="planet-title">Mercury</div>
         </div>
         <div class="planet-description">
           <table>
@@ -152,33 +176,37 @@
               <th>Surface Temperature:</th>
               <td>-173 to 427°C</td>
             </tr>
-            </table>
+          </table>
         </div>
         <div class="planet-description-vertical">
-              Diameter:<br>
-              4,879 km<br><br>
-              Mass:<br>
-              3.29 x 10^23 kg<br><br>
-              Moons:<br>
-              None<br><br>
-              Orbit Distance:<br>
-              57,909,227 km<br><br>
-              Orbit Period:<br>
-              88 days<br><br>
-              Day length:<br>
-              59 days<br><br>
-              Surface Temperature:<br>
-              -173 to 427°C
+          Diameter:<br />
+          4,879 km<br /><br />
+          Mass:<br />
+          3.29 x 10^23 kg<br /><br />
+          Moons:<br />
+          None<br /><br />
+          Orbit Distance:<br />
+          57,909,227 km<br /><br />
+          Orbit Period:<br />
+          88 days<br /><br />
+          Day length:<br />
+          59 days<br /><br />
+          Surface Temperature:<br />
+          -173 to 427°C
         </div>
       </div>
+      <!-- pop up card for venus -->
       <div id="venus" class="pop-up-card" onclick="close_venus()">
         <span class="close-window" onclick="close_venus()">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
-            <img src="assets/css/img/venus.png" alt="venus" class="planet-pic">
+            <img
+              src="assets/css/img/venus.png"
+              alt="venus"
+              class="planet-pic"
+            />
           </div>
-          <div class="planet-title">Venus
-          </div>
+          <div class="planet-title">Venus</div>
         </div>
         <div class="planet-description">
           <table>
@@ -210,33 +238,37 @@
               <th>Surface Temperature:</th>
               <td>462°C</td>
             </tr>
-            </table>
+          </table>
         </div>
         <div class="planet-description-vertical">
-              Diameter:<br>
-              12,104 km<br><br>
-              Mass:<br>
-              4.87 x 10^24 kg<br><br>
-              Moons:<br>
-              None<br><br>
-              Orbit Distance:<br>
-              108,209,475 km<br><br>
-              Orbit Period:<br>
-              225 days<br><br>
-              Day length:<br>
-              117 days<br><br>
-              Surface Temperature:<br>
-              462°C
+          Diameter:<br />
+          12,104 km<br /><br />
+          Mass:<br />
+          4.87 x 10^24 kg<br /><br />
+          Moons:<br />
+          None<br /><br />
+          Orbit Distance:<br />
+          108,209,475 km<br /><br />
+          Orbit Period:<br />
+          225 days<br /><br />
+          Day length:<br />
+          117 days<br /><br />
+          Surface Temperature:<br />
+          462°C
         </div>
       </div>
+      <!-- pop up card for earth -->
       <div id="earth" class="pop-up-card" onclick="close_earth()">
         <span class="close-window" onclick="close_earth()">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
-            <img src="assets/css/img/earth.png" alt="earth" class="planet-pic">
+            <img
+              src="assets/css/img/earth.png"
+              alt="earth"
+              class="planet-pic"
+            />
           </div>
-          <div class="planet-title">Earth
-          </div>
+          <div class="planet-title">Earth</div>
         </div>
         <div class="planet-description">
           <table>
@@ -268,33 +300,33 @@
               <th>Surface Temperature:</th>
               <td>-88 to 58°C</td>
             </tr>
-            </table>
+          </table>
         </div>
         <div class="planet-description-vertical">
-              Diameter:<br>
-              12,756 km<br><br>
-              Mass:<br>
-              5.97 x 10^24 kg<br><br>
-              Moons:<br>
-              1<br><br>
-              Orbit Distance:<br>
-              149,598,626 km<br><br>
-              Orbit Period:<br>
-              365.24 days<br><br>
-              Day length:<br>
-              24 hours<br><br>
-              Surface Temperature:<br>
-              -88 to 58°C
+          Diameter:<br />
+          12,756 km<br /><br />
+          Mass:<br />
+          5.97 x 10^24 kg<br /><br />
+          Moons:<br />
+          1<br /><br />
+          Orbit Distance:<br />
+          149,598,626 km<br /><br />
+          Orbit Period:<br />
+          365.24 days<br /><br />
+          Day length:<br />
+          24 hours<br /><br />
+          Surface Temperature:<br />
+          -88 to 58°C
         </div>
       </div>
+      <!-- pop up card for mars -->
       <div id="mars" class="pop-up-card" onclick="close_mars()">
         <span class="close-window" onclick="close_mars()">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
-            <img src="assets/css/img/mars.png" alt="mars" class="planet-pic">
+            <img src="assets/css/img/mars.png" alt="mars" class="planet-pic" />
           </div>
-          <div class="planet-title">Mars
-          </div>
+          <div class="planet-title">Mars</div>
         </div>
         <div class="planet-description">
           <table>
@@ -326,33 +358,37 @@
               <th>Surface Temperature:</th>
               <td>-87 to -5°C</td>
             </tr>
-            </table>
+          </table>
         </div>
         <div class="planet-description-vertical">
-              Diameter:<br>
-              6,779 km<br><br>
-              Mass:<br>
-              6.39 x 10^23 kg<br><br>
-              Moons:<br>
-              2<br><br>
-              Orbit Distance:<br>
-              277,943,824 km<br><br>
-              Orbit Period:<br>
-              687 days<br><br>
-              Day length:<br>
-              25 hours<br><br>
-              Surface Temperature:<br>
-              -87 to -5°C
+          Diameter:<br />
+          6,779 km<br /><br />
+          Mass:<br />
+          6.39 x 10^23 kg<br /><br />
+          Moons:<br />
+          2<br /><br />
+          Orbit Distance:<br />
+          277,943,824 km<br /><br />
+          Orbit Period:<br />
+          687 days<br /><br />
+          Day length:<br />
+          25 hours<br /><br />
+          Surface Temperature:<br />
+          -87 to -5°C
         </div>
       </div>
+      <!-- pop up card for jupiter -->
       <div id="jupiter" class="pop-up-card" onclick="close_jupiter()">
         <span class="close-window" onclick="close_jupiter()">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
-            <img src="assets/css/img/jupiter-250.png" alt="jupiter" class="planet-pic">
+            <img
+              src="assets/css/img/jupiter-250.png"
+              alt="jupiter"
+              class="planet-pic"
+            />
           </div>
-          <div class="planet-title">Jupiter
-          </div>
+          <div class="planet-title">Jupiter</div>
         </div>
         <div class="planet-description">
           <table>
@@ -384,33 +420,37 @@
               <th>Surface Temperature:</th>
               <td>-108°C</td>
             </tr>
-            </table>
+          </table>
         </div>
         <div class="planet-description-vertical">
-              Diameter:<br>
-              142,984 km<br><br>
-              Mass:<br>
-              1.90 x 10^27 kg<br><br>
-              Moons:<br>
-              79<br><br>
-              Orbit Distance:<br>
-              778,340,821 km<br><br>
-              Orbit Period:<br>
-              12 years<br><br>
-              Day length:<br>
-              10 hours<br><br>
-              Surface Temperature:<br>
-              -108°C
+          Diameter:<br />
+          142,984 km<br /><br />
+          Mass:<br />
+          1.90 x 10^27 kg<br /><br />
+          Moons:<br />
+          79<br /><br />
+          Orbit Distance:<br />
+          778,340,821 km<br /><br />
+          Orbit Period:<br />
+          12 years<br /><br />
+          Day length:<br />
+          10 hours<br /><br />
+          Surface Temperature:<br />
+          -108°C
         </div>
       </div>
+      <!-- pop up card for saturn -->
       <div id="saturn" class="pop-up-card" onclick="close_saturn()">
         <span class="close-window" onclick="close_saturn()">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
-            <img src="assets/css/img/saturn-300.png" alt="saturn" class="planet-pic">
+            <img
+              src="assets/css/img/saturn-300.png"
+              alt="saturn"
+              class="planet-pic"
+            />
           </div>
-          <div class="planet-title">Saturn
-          </div>
+          <div class="planet-title">Saturn</div>
         </div>
         <div class="planet-description">
           <table>
@@ -442,33 +482,37 @@
               <th>Surface Temperature:</th>
               <td>-139°C</td>
             </tr>
-            </table>
+          </table>
         </div>
         <div class="planet-description-vertical">
-              Diameter:<br>
-              116,460 km<br><br>
-              Mass:<br>
-              5.68 x 10^26 kg<br><br>
-              Moons:<br>
-              82<br><br>
-              Orbit Distance:<br>
-              1,426,666,422 km<br><br>
-              Orbit Period:<br>
-              29.5 years<br><br>
-              Day length:<br>
-              11 hours<br><br>
-              Surface Temperature:<br>
-              -139°C
+          Diameter:<br />
+          116,460 km<br /><br />
+          Mass:<br />
+          5.68 x 10^26 kg<br /><br />
+          Moons:<br />
+          82<br /><br />
+          Orbit Distance:<br />
+          1,426,666,422 km<br /><br />
+          Orbit Period:<br />
+          29.5 years<br /><br />
+          Day length:<br />
+          11 hours<br /><br />
+          Surface Temperature:<br />
+          -139°C
         </div>
       </div>
+      <!-- pop up card for uranus -->
       <div id="uranus" class="pop-up-card" onclick="close_uranus()">
         <span class="close-window" onclick="close_uranus()">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
-            <img src="assets/css/img/uranus-trans.png" alt="uranus" class="planet-pic">
+            <img
+              src="assets/css/img/uranus-trans.png"
+              alt="uranus"
+              class="planet-pic"
+            />
           </div>
-          <div class="planet-title">Uranus
-          </div>
+          <div class="planet-title">Uranus</div>
         </div>
         <div class="planet-description">
           <table>
@@ -500,33 +544,37 @@
               <th>Surface Temperature:</th>
               <td>-197°C</td>
             </tr>
-            </table>
+          </table>
         </div>
         <div class="planet-description-vertical">
-              Diameter:<br>
-              50,742 km<br><br>
-              Mass:<br>
-              8.68 x 10^25 kg<br><br>
-              Moons:<br>
-              27<br><br>
-              Orbit Distance:<br>
-              2,870,658,186 km<br><br>
-              Orbit Period:<br>
-              84 years<br><br>
-              Day length:<br>
-              17 hours<br><br>
-              Surface Temperature:<br>
-              -197°C
+          Diameter:<br />
+          50,742 km<br /><br />
+          Mass:<br />
+          8.68 x 10^25 kg<br /><br />
+          Moons:<br />
+          27<br /><br />
+          Orbit Distance:<br />
+          2,870,658,186 km<br /><br />
+          Orbit Period:<br />
+          84 years<br /><br />
+          Day length:<br />
+          17 hours<br /><br />
+          Surface Temperature:<br />
+          -197°C
         </div>
       </div>
+      <!-- pop up card for neptune -->
       <div id="neptune" class="pop-up-card" onclick="close_neptune()">
         <span class="close-window" onclick="close_neptune()">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
-            <img src="assets/css/img/neptune.png" alt="neptune" class="planet-pic">
+            <img
+              src="assets/css/img/neptune.png"
+              alt="neptune"
+              class="planet-pic"
+            />
           </div>
-          <div class="planet-title">Neptune
-          </div>
+          <div class="planet-title">Neptune</div>
         </div>
         <div class="planet-description">
           <table>
@@ -558,33 +606,37 @@
               <th>Surface Temperature:</th>
               <td>-201°C</td>
             </tr>
-            </table>
+          </table>
         </div>
         <div class="planet-description-vertical">
-              Diameter:<br>
-              49,244 km<br><br>
-              Mass:<br>
-              1.02 x 10^26 kg<br><br>
-              Moons:<br>
-              14<br><br>
-              Orbit Distance:<br>
-              4,498,396,441 km<br><br>
-              Orbit Period:<br>
-              165 years<br><br>
-              Day length:<br>
-              16 hours<br><br>
-              Surface Temperature:<br>
-              -201°C
+          Diameter:<br />
+          49,244 km<br /><br />
+          Mass:<br />
+          1.02 x 10^26 kg<br /><br />
+          Moons:<br />
+          14<br /><br />
+          Orbit Distance:<br />
+          4,498,396,441 km<br /><br />
+          Orbit Period:<br />
+          165 years<br /><br />
+          Day length:<br />
+          16 hours<br /><br />
+          Surface Temperature:<br />
+          -201°C
         </div>
       </div>
+      <!-- pop up card for pluto -->
       <div id="pluto" class="pop-up-card" onclick="close_pluto()">
         <span class="close-window" onclick="close_pluto()">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
-            <img src="assets/css/img/pluto.png" alt="pluto" class="planet-pic">
+            <img
+              src="assets/css/img/pluto.png"
+              alt="pluto"
+              class="planet-pic"
+            />
           </div>
-          <div class="planet-title">Pluto
-          </div>
+          <div class="planet-title">Pluto</div>
         </div>
         <div class="planet-description">
           <table>
@@ -616,42 +668,45 @@
               <th>Surface Temperature:</th>
               <td>-226 to 240°C</td>
             </tr>
-            </table>
+          </table>
         </div>
         <div class="planet-description-vertical">
-              Diameter:<br>
-              2,376 km<br><br>
-              Mass:<br>
-              1.31 x 10^22 kg<br><br>
-              Moons:<br>
-              5<br><br>
-              Orbit Distance:<br>
-              5,906,453,414 km<br><br>
-              Orbit Period:<br>
-              248 years<br><br>
-              Day length:<br>
-              6.4 days<br><br>
-              Surface Temperature:<br>
-              -226 to 240°C
+          Diameter:<br />
+          2,376 km<br /><br />
+          Mass:<br />
+          1.31 x 10^22 kg<br /><br />
+          Moons:<br />
+          5<br /><br />
+          Orbit Distance:<br />
+          5,906,453,414 km<br /><br />
+          Orbit Period:<br />
+          248 years<br /><br />
+          Day length:<br />
+          6.4 days<br /><br />
+          Surface Temperature:<br />
+          -226 to 240°C
         </div>
       </div>
     </div>
-
+    <!-- main planet buttons images/buttons below -->
     <div class="flex-row solar-outer">
-            <div class="solar-large">
-                <div class="solar-sun" onclick="sun()"></div>
-                <div class="solar-mercury" onclick="mercury()"></div>
-                <div class="solar-venus" onclick="venus()"></div>
-                <div class="solar-earth" onclick="earth()"></div>
-                <div class="solar-mars" onclick="mars()"></div>
-                <div class="solar-jupiter" onclick="jupiter()"></div>
-                <div class="solar-saturn" onclick="saturn()"></div>
-                <div class="solar-uranus" onclick="uranus()"></div>
-                <div class="solar-neptune" onclick="neptune()"></div>
-                <div class="solar-pluto" onclick="pluto()"></div>
-            </div>
-        </div>
+      <div class="solar-large">
+        <div class="solar-sun" onclick="sun()"></div>
+        <div class="solar-mercury" onclick="mercury()"></div>
+        <div class="solar-venus" onclick="venus()"></div>
+        <div class="solar-earth" onclick="earth()"></div>
+        <div class="solar-mars" onclick="mars()"></div>
+        <div class="solar-jupiter" onclick="jupiter()"></div>
+        <div class="solar-saturn" onclick="saturn()"></div>
+        <div class="solar-uranus" onclick="uranus()"></div>
+        <div class="solar-neptune" onclick="neptune()"></div>
+        <div class="solar-pluto" onclick="pluto()"></div>
+      </div>
+    </div>
     <script src="assets/scripts/navbar.js" type="text/javascript"></script>
-    <script src="assets/scripts/solar-system.js" type="text/javascript"></script>
-</body>
+    <script
+      src="assets/scripts/solar-system.js"
+      type="text/javascript"
+    ></script>
+  </body>
 </html>

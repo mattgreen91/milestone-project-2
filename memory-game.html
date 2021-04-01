@@ -1,99 +1,165 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/memorygame.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="assets/css/memorygame.css" />
-  <link rel="stylesheet" href="assets/css/style.css">
+    <title>Memory Game</title>
+  </head>
 
-  <title>Memory Game</title>
-</head>
-
-<body>
-  <header>
-    <nav class="flex-row">
-      <div class="logo-container"><img class="logo" src="assets/images/space_logo.png" alt="logo" onclick="location.href='index.html';" /></div>
-      <div class="nav">
-        <ul class="menu">
-          <li><a href="index.html">Home Page</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Learn about Space</a>
-            <div class="dropdown-content">
-              <a href="solar-system.html" class="nav-sub"><p class="nav-sub">Solar System</p></a>
-              <a href="iss.html"><p class="nav-sub">ISS Satellite</p></a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Fun and Games</a>
-            <div class="dropdown-content">
-              <a href="hangman-game.html"><p class="nav-sub">Hangman Game</p></a>
-              <a href="memory-game.html"><p class="nav-sub">Memory Game</p></a>
-              <a href="word-game.html"><p class="nav-sub">Word Game</p></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="mobile-nav" onclick="openMenu()">
-        <img id="nav-rocket" src="assets/images/rocket_logo.png" alt="mnnu" />
-        <div id="mobile-nav-menu">
-          <ul>
-            <li onclick="location.href='index.html';">Home Page</li>
-            <li onclick="location.href='solar-system.html';">Solar System</li>
-            <li onclick="location.href='iss.html';">ISS Satellite</li>
-            <li onclick="location.href='hangman-game.html';">Hangman Game</li>
-            <li onclick="location.href='memory-game.html';">Memory Game</li>
-            <li onclick="location.href='word-game.html';">Word Game</li>
+  <body>
+    <header>
+      <nav class="flex-row">
+        <!-- webpage logo -->
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="assets/images/space_logo.png"
+            alt="logo"
+            onclick="location.href='index.html';"
+          />
+        </div>
+        <!-- navigation menu -->
+        <div class="nav">
+          <ul class="menu">
+            <li><a href="index.html">Home Page</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Learn about Space</a>
+              <div class="dropdown-content">
+                <a href="solar-system.html" class="nav-sub"
+                  ><p class="nav-sub">Solar System</p></a
+                >
+                <a href="iss.html"><p class="nav-sub">ISS Satellite</p></a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Fun and Games</a>
+              <div class="dropdown-content">
+                <a href="hangman-game.html"
+                  ><p class="nav-sub">Hangman Game</p></a
+                >
+                <a href="memory-game.html"
+                  ><p class="nav-sub">Memory Game</p></a
+                >
+                <a href="word-game.html"><p class="nav-sub">Word Game</p></a>
+              </div>
+            </li>
           </ul>
         </div>
-      </div>
-
-    </nav>
+        <!-- mobile navigation menu -->
+        <div class="mobile-nav" onclick="openMenu()">
+          <img id="nav-rocket" src="assets/images/rocket_logo.png" alt="mnnu" />
+          <div id="mobile-nav-menu">
+            <ul>
+              <li onclick="location.href='index.html';">Home Page</li>
+              <li onclick="location.href='solar-system.html';">Solar System</li>
+              <li onclick="location.href='iss.html';">ISS Satellite</li>
+              <li onclick="location.href='hangman-game.html';">Hangman Game</li>
+              <li onclick="location.href='memory-game.html';">Memory Game</li>
+              <li onclick="location.href='word-game.html';">Word Game</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    
+
     <div class="flex-row">
       <div class="body-top-title">Memory Game</div>
     </div>
     <div class="memorygame-top"></div>
     <div class="body-top flex-row memory-main-section">
-      <div class="memorygame-left-column"></div>  
+      <div class="memorygame-left-column"></div>
       <div class="memorygame-middle-column">
         <div class="memorygame-area">
-        <div id="my-memorygame" class="quizy-memorygame">
-          <ul>
-            <li class="match1">
-              <img src="assets/images/andromeda.gif" alt="Andromeda Galaxy" style="height: 140px; width: 140px;" />
-            </li>
-            <li class="match2">
-              <img src="assets/images/blackeye.gif" alt="Black Eye Galaxy" style="height: 140px; width: 140px;" />
-            </li>
-            <li class="match3">
-              <img src="assets/images/milkyway.gif" alt="Milkyway Galaxy" style="height: 140px; width: 140px;" />
-            </li>
-            <li class="match1">
-              <img src="assets/images/andromeda.gif" alt="Andromeda Galaxy" style="height: 140px; width: 140px;" />
-            </li>
-            <li class="match2">
-              <img src="assets/images/blackeye.gif" alt="Black Eye Galaxy" style="height: 140px; width: 140px;" />
-            </li>
-            <li class="match3">
-              <img src="assets/images/milkyway.gif" alt="Milkyway Galaxy" style="height: 140px; width: 140px;" />
-            </li>
-          </ul>
+          <!-- memory game loads in this section -->
+          <div id="my-memorygame" class="quizy-memorygame">
+            <ul>
+              <!-- all below images will be cards in the game -->
+              <li class="match1">
+                <img
+                  src="assets/images/andromeda.gif"
+                  alt="Andromeda Galaxy"
+                  style="height: 140px; width: 140px"
+                />
+              </li>
+              <li class="match2">
+                <img
+                  src="assets/images/blackeye.gif"
+                  alt="Black Eye Galaxy"
+                  style="height: 140px; width: 140px"
+                />
+              </li>
+              <li class="match3">
+                <img
+                  src="assets/images/milkyway.gif"
+                  alt="Milkyway Galaxy"
+                  style="height: 140px; width: 140px"
+                />
+              </li>
+              <li class="match1">
+                <img
+                  src="assets/images/andromeda.gif"
+                  alt="Andromeda Galaxy"
+                  style="height: 140px; width: 140px"
+                />
+              </li>
+              <li class="match2">
+                <img
+                  src="assets/images/blackeye.gif"
+                  alt="Black Eye Galaxy"
+                  style="height: 140px; width: 140px"
+                />
+              </li>
+              <li class="match3">
+                <img
+                  src="assets/images/milkyway.gif"
+                  alt="Milkyway Galaxy"
+                  style="height: 140px; width: 140px"
+                />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="memorygame-right-column"></div>
-        <div class="memorygame-bottom"><button class="button" id="memory-reset" onclick="location.reload();">New Game</button></div>
+      <!-- reset button -->
+      <div class="memorygame-bottom">
+        <button class="button" id="memory-reset" onclick="location.reload();">
+          New Game
+        </button>
+      </div>
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"> </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" type="text/javascript"></script>
-<script src="assets/scripts/jquery.flip.min.js" type="text/javascript"></script>
-<script src="assets/scripts/jquery.quiz.quizmemorygame.js" type="text/javascript"></script>
-<script>
-         $('#my-memorygame').quizyMemoryGame({itemWidth: 140, itemHeight: 140, itemsMargin:0, colCount:2, animType:'flip' , flipAnim:'tb', animSpeed:250, resultIcons:true});
-   </script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="assets/scripts/jquery.flip.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="assets/scripts/jquery.quiz.quizmemorygame.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      $("#my-memorygame").quizyMemoryGame({
+        itemWidth: 140,
+        itemHeight: 140,
+        itemsMargin: 0,
+        colCount: 2,
+        animType: "flip",
+        flipAnim: "tb",
+        animSpeed: 250,
+        resultIcons: true,
+      });
+    </script>
     <script src="assets/scripts/navbar.js" type="text/javascript"></script>
-</body>
+  </body>
 </html>
