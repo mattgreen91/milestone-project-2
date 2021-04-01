@@ -40,6 +40,7 @@ function buildGame(score1, score2) {
   document.getElementById("won").innerHTML = won;
   document.getElementById("lost").innerHTML = lost;
 
+  //list of answers
   let allAnswers = [
     "mercury",
     "venus",
@@ -133,7 +134,6 @@ if ((wrongLetters / gameAnswer.length) == 1) {
 }
 
 // for every wrong letter the hangman picture will advance (1 life lost)
-
   if (wrongLetters == gameAnswer.length) {
       console.log("current incorrect score is " + incorrectGuesses);
       console.log("no. unmatched letters is " + wrongLetters);
@@ -144,7 +144,6 @@ if ((wrongLetters / gameAnswer.length) == 1) {
 
 // if all lives are lost, then the game it will display a message that the user has lost, and give a new word
 // lost score increments
-
   if (incorrectGuesses == 6) {
     alert("Hangman - You Lost! \n The correct word was " + gameAnswer);
     lost = lost +1;

@@ -1,3 +1,5 @@
+// below selects the DIV elements containing the images of planets
+
 var sun_card = document.getElementById('sun');
 var mercury_card = document.getElementById('mercury');
 var venus_card = document.getElementById('venus');
@@ -8,6 +10,8 @@ var saturn_card = document.getElementById('saturn');
 var uranus_card = document.getElementById('uranus');
 var neptune_card = document.getElementById('neptune');
 var pluto_card = document.getElementById('pluto');
+
+// below functions convert the pop-up from 'display: none' to 'display: block' when the button is clicked on
 
 function sun() {
     sun_card.style.display = "block";
@@ -49,6 +53,8 @@ function neptune() {
 function pluto () {
     pluto_card.style.display = "block";
 }
+
+// below functions convert the pop-up from 'display: block' to 'display: none' when the button or DIV is clicked on again
 
 function close_sun() {
     sun_card.style.display = "none"
