@@ -36,7 +36,8 @@ function buildGame(score1, score2) {
   wrongLetters = 0;
 
   document.getElementById("man").src = "assets/images/h0.png";
-  document.getElementById("man").alt = incorrectGuesses + " of 5 lives remaining";
+  document.getElementById("man").alt =
+    incorrectGuesses + " of 5 lives remaining";
   document.getElementById("won").innerHTML = won;
   document.getElementById("lost").innerHTML = lost;
 
@@ -100,7 +101,7 @@ function guessAnswer(key) {
   document.getElementById(key).setAttribute("disabled", true);
   document.getElementById(key).style.backgroundColor = "#cdcdcd";
   let i = 0;
-   // this loop searches if the key pressed matches any letters in the the game answer
+  // this loop searches if the key pressed matches any letters in the the game answer
   while (i < gameAnswer.length) {
     if (key === gameAnswerLetters[i]) {
       hiddenAnswerLetters[i] = gameAnswerLetters[i];
@@ -110,18 +111,18 @@ function guessAnswer(key) {
     i++;
   }
 
-// this checks if the word has been guessed, and will display a message, and give a new word to guess
-// won score increments
+  // this checks if the word has been guessed, and will display a message, and give a new word to guess
+  // won score increments
   if (gameAnswer == document.getElementById("word").innerHTML) {
     alert("Well done! You won :) \n The word " + gameAnswer + " was correct");
     won = won + 1;
     changeWord();
-}
+  }
 
   // this loop searches if the key pressed matches any letters in the the game answer
-let wrongLetters = 0;
+  let wrongLetters = 0;
 
-i = 0;
+  i = 0;
   while (i < gameAnswer.length) {
     if (key !== gameAnswerLetters[i]) {
       wrongLetters = wrongLetters + 1;
@@ -129,24 +130,26 @@ i = 0;
     i++;
   }
 
-if ((wrongLetters / gameAnswer.length) == 1) {
+  if (wrongLetters / gameAnswer.length == 1) {
     incorrectGuesses = incorrectGuesses + 1;
-}
+  }
 
-// for every wrong letter the hangman picture will advance (1 life lost)
+  // for every wrong letter the hangman picture will advance (1 life lost)
   if (wrongLetters == gameAnswer.length) {
-      console.log("current incorrect score is " + incorrectGuesses);
-      console.log("no. unmatched letters is " + wrongLetters);
-      console.log("letters remaining is " + (gameAnswer.length - correctLetters));
-    document.getElementById("man").src = "assets/images/h" + incorrectGuesses + ".png";
-    document.getElementById("man").alt = incorrectGuesses + " of 5 lives remaining";
-    }
+    console.log("current incorrect score is " + incorrectGuesses);
+    console.log("no. unmatched letters is " + wrongLetters);
+    console.log("letters remaining is " + (gameAnswer.length - correctLetters));
+    document.getElementById("man").src =
+      "assets/images/h" + incorrectGuesses + ".png";
+    document.getElementById("man").alt =
+      incorrectGuesses + " of 5 lives remaining";
+  }
 
-// if all lives are lost, then the game it will display a message that the user has lost, and give a new word
-// lost score increments
+  // if all lives are lost, then the game it will display a message that the user has lost, and give a new word
+  // lost score increments
   if (incorrectGuesses == 6) {
     alert("Hangman - You Lost! \n The correct word was " + gameAnswer);
-    lost = lost +1;
+    lost = lost + 1;
     changeWord();
-    }
+  }
 }
