@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bahiana&family=Comfortaa&family=GFS+Neohellenic&family=Revalia&display=swap");
 
 /* default-font-setup */
+
 body {
   font-size: 16px;
   text-align: center;
@@ -38,9 +39,11 @@ body {
 /* cursor changes when logo hovered over, so user knows this is a hyperlink */
 
 .logo:hover {
-cursor: pointer;
-opacity: 0.8;
+  cursor: pointer;
+  opacity: 0.8;
 }
+
+/* navigation bar area at top of screen */
 
 .nav {
   width: 70%;
@@ -50,58 +53,60 @@ opacity: 0.8;
   font-family: "GFS Neohellenic", sans-serif;
 }
 
-/* mobile navigation that will display with javascript function */
+/* mobile navigation that will display will change from 'none' to 'block' with javascript function */
 
 .mobile-nav {
-    width: 50%;
-    height: 100px;
-    background-color: black;
-    display: none;
-    cursor: pointer;
-    font-family: "GFS Neohellenic", sans-serif;
-  }
+  width: 50%;
+  height: 100px;
+  background-color: black;
+  display: none;
+  cursor: pointer;
+  font-family: "GFS Neohellenic", sans-serif;
+}
 
-  /* when the mobile-nav is hovered over, the rocket will change colour (opacity 0.8) */
+/* when the mobile-nav is hovered over, the rocket will change colour (opacity 0.8) */
   
 .mobile-nav:hover > #nav-rocket {
-      opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* mobile navigation menu that appears below rocket logo */
 
-  #mobile-nav-menu {
-    display: none;
-    position: relative;
+#mobile-nav-menu {
+  display: none;
+  position: relative;
   width: 100%;
   height: 300px;
   right: 0;
   z-index: 2;
-  }
+}
 
-  #mobile-nav-menu ul {
-    list-style: none;
-    padding-left: 0;
-      }
+/* mobile navigation menu list */
 
-  #mobile-nav-menu ul li {
-width: 100%;
-height: 50px;
-line-height: 50px;
-font-size: 20px;
-background-color: #e6e6e6;
-  }
+#mobile-nav-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
 
-  #mobile-nav-menu ul li:hover {
-    background-color: #fafafa;
-      }
+#mobile-nav-menu ul li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  background-color: #e6e6e6;
+}
+
+#mobile-nav-menu ul li:hover {
+  background-color: #fafafa;
+}
+
+/* rocket to open mobile navigation menu on smaller screens */
 
 #nav-rocket {
-  
   width: 100px;
   height: 100%;
   float: right;
   padding-right: 5%;
-
 }
 
 #mobile-nav-menu ul li a {
@@ -118,7 +123,7 @@ background-color: #e6e6e6;
   background-color: lightgray;
 }
 
-/* navigation bar at the top */
+/* navigation bar on large screens */
 
 .menu {
   list-style-type: none;
@@ -162,10 +167,10 @@ li.dropdown {
 /* dropdown button width to match below content width */
 
 .dropdown {
-    min-width: 180px;
+  min-width: 180px;
 }
 
-/* dropdown menu content formatting */
+/* dropdown menu content formatting, with z index of 2, as solar system and home page use z index of 1 */
 
 .dropdown-content {
   display: none;
@@ -186,8 +191,8 @@ li.dropdown {
 }
 
 .nav-sub {
-    color: black;
-    line-height: 20px;
+  color: black;
+  line-height: 20px;
 }
 
 .dropdown-content a:hover {
@@ -198,7 +203,7 @@ li.dropdown {
   display: block;
 }
 
-/* main layout */
+/* main layout - top title on all pages */
 
 .body-top-title {
   width: 100%;
@@ -209,7 +214,7 @@ li.dropdown {
   color: white;
 }
 
-/* homepage */
+/* homepage - rocket animation */
 
 .rocket-space {
   height: 100%;
@@ -226,10 +231,10 @@ li.dropdown {
 
 @keyframes stars_moving {   
   from {
-      background-position: 200% left;
+    background-position: 200% left;
   }
   to {
-      background-position: 0px bottom;
+    background-position: 0px bottom;
   }
 }
 
@@ -237,6 +242,8 @@ li.dropdown {
   width: 50%;
   height: 600px;
 }
+
+/* welcome message next to rocket animation */
 
 .welcome {
   width: 40%;
@@ -270,10 +277,10 @@ li.dropdown {
 
 @keyframes rocket_moving {
   from {
-      transform: translateY(-5px);
+    transform: translateY(-5px);
   }
   to {
-      transform: translateY(5px);
+    transform: translateY(5px);
   }
 }
 
@@ -283,16 +290,22 @@ li.dropdown {
   height: 600px;
 }
 
+/* hangman lives picture */
+
 .top-left-column {
   width: 25%;
   height: 400px;
   display: inline-block;
 }
 
+/* divides into 3 rows below */
+
 .top-middle-column {
   width: 55%;
   height: 600px;
 }
+
+/* hangman guessing word area */
 
 .row-1 {
   height: 200px;
@@ -301,6 +314,8 @@ li.dropdown {
   align-items: center;
 }
 
+/* hangman keyboard layout */
+
 .row-2 {
   height: 350px;
   display: flex;
@@ -308,12 +323,16 @@ li.dropdown {
   align-items: center;
 }
 
+/* hangman change word button area */
+
 .row-3 {
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* hangman + word game scores and reset button area */
 
 .top-right-column {
   width: 20%;
@@ -327,20 +346,20 @@ li.dropdown {
 /* memory game column */
 
 .memorygame-top {
-    width: 100%;
-    height: 50px;
+  width: 100%;
+  height: 50px;
 }
 
 .memory-main-section {
-    width: 100%;
-    height: 500px;
+  width: 100%;
+  height: 500px;
 }
 
 .memorygame-middle-column {
-    width: 18%;
-    height: 500px;
-    clear: both;
-    margin: auto;
+  width: 18%;
+  height: 500px;
+  clear: both;
+  margin: auto;
 }
 
 .memorygame-bottom {
@@ -350,51 +369,61 @@ li.dropdown {
   line-height: 100px;
 }
 
-/* ISS */
+/* ISS section */
 
 .iss-middle {
-    width: 100%;
+  width: 100%;
 }
 
-/* iss map */
+/* ISS map */
 #map {
   height: 500px;
   width: 1000px;
   margin: auto;
 }
 
-  .iss-text {
-      font-size: 20px;
-      color: white;
-      line-height: 30px;
-      width: 100%;
-      text-align: center;
-  }
+/* ISS text area to display above map */
 
-  .iss-info {
-      height: 100px;
-      width: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-  }
+.iss-text {
+  font-size: 20px;
+  color: white;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+}
 
-  #iss-loading {
-    display: inline-block;
-    clear: both;
-    border: 5px solid white;
-    border-top: 5px solid darkblue;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    animation: loading-cursor 2s linear infinite;
+/* ISS latitude and longitude data */
+
+.iss-info {
+  height: 100px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* loading animation to display on ISS satellite page */
+
+#iss-loading {
+  display: inline-block;
+  clear: both;
+  border: 5px solid white;
+  border-top: 5px solid darkblue;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: loading-cursor 2s linear infinite;
 }
 
 @keyframes loading-cursor {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
 }
 
-/* solar system */
+/* solar system page title */
 
 .solar-title {
   width: 100%;
@@ -402,178 +431,184 @@ li.dropdown {
   position: relative;
 }
 
+/* area displaying all planets in solar-system page */
+
 .solar-outer {
-    width: 100%;
-    height: 600px;
+  width: 100%;
+  height: 600px;
 }
 
 .solar-large {
-    width: 1000px;
-    height: 600px;
-    margin: 0 auto;
-    clear: both;
-    float: left;
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+  clear: both;
+  float: left;
 }
 
+/* all planets below and hover effects with 0.8 opacity, and cursor of pointer */
+
 .solar-sun {
-    background: url("img/sun.png");
-    background-size: contain;
-    position: relative;
-    padding: 0 0 0 0;
-    width: 200px;
-    height: 200px;
-    top: 200px;
-    left: 400px;
+  background: url("img/sun.png");
+  background-size: contain;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 200px;
+  height: 200px;
+  top: 200px;
+  left: 400px;
 }
 
 .solar-sun:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .solar-mercury {
-    background: url("img/mercury.png");
-    background-size: contain;
-    position: relative;
-    padding: 0 0 0 0;
-    width: 50px;
-    height: 50px;
-    top: 50px;
-    left: 350px;
+  background: url("img/mercury.png");
+  background-size: contain;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  left: 350px;
 }
 
 .solar-mercury:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .solar-venus {
-    background: url("img/venus.png");
-    background-size: contain;
-    position: relative;
-    padding: 0 0 0 0;
-    width: 100px;
-    height: 100px;
-    top: -100px;
-    left: 600px;
+  background: url("img/venus.png");
+  background-size: contain;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 100px;
+  height: 100px;
+  top: -100px;
+  left: 600px;
 }
 
 .solar-venus:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .solar-earth {
-    background: url("img/earth.png");
-    background-size: contain;
-    position: relative;
-    padding: 0 0 0 0;
-    width: 100px;
-    height: 100px;
-    top: 100px;
-    left: 550px;
+  background: url("img/earth.png");
+  background-size: contain;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 550px;
 }
 
 .solar-earth:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .solar-mars {
-    background: url("img/mars.png");
-    background-size: contain;
-    position: relative;
-    padding: 0 0 0 0;
-    width: 50px;
-    height: 50px;
-    top: 0px;
-    left: 250px;
+  background: url("img/mars.png");
+  background-size: contain;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 250px;
 }
 
 .solar-mars:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .solar-jupiter {
-    background: url("img/jupiter-250.png");
-    background-size: contain;
-    position: relative;
-    padding: 0 0 0 0;
-    width: 150px;
-    height: 150px;
-    top: -450px;
-    left: 150px;
+  background: url("img/jupiter-250.png");
+  background-size: contain;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 150px;
+  height: 150px;
+  top: -450px;
+  left: 150px;
 }
 
 .solar-jupiter:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .solar-saturn {
-    background: url("img/saturn-300.png");
-    background-size: contain;
-    position: relative;
-    padding: 0 0 0 0;
-    width: 150px;
-    height: 150px;
-    top: -350px;
-    left: 50px;
+  background: url("img/saturn-300.png");
+  background-size: contain;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 150px;
+  height: 150px;
+  top: -350px;
+  left: 50px;
 }
 
 .solar-saturn:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .solar-uranus {
-    background: url("img/uranus-trans.png");
-    background-size: contain;
-    position: relative;
-    padding: 0 0 0 0;
-    width: 100px;
-    height: 100px;
-    top: -400px;
-    left: 900px;
+  background: url("img/uranus-trans.png");
+  background-size: contain;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 100px;
+  height: 100px;
+  top: -400px;
+  left: 900px;
 }
 
 .solar-uranus:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .solar-neptune {
-    background: url("img/neptune.png");
-    background-size: contain;
-    position: relative;
-    padding: 0 0 0 0;
-    width: 100px;
-    height: 100px;
-    top: -900px;
-    left: 850px;
+  background: url("img/neptune.png");
+  background-size: contain;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 100px;
+  height: 100px;
+  top: -900px;
+  left: 850px;
 }
 
 .solar-neptune:hover {
-    opacity: 0.8;
-    cursor: pointer;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .solar-pluto {
-    background: url("img/pluto.png");
-    background-size: contain;
-    position: relative;
-    padding: 0 0 0 0;
-    width: 50px;
-    height: 50px;
-    top: -500px;
-    left: 0px;
+  background: url("img/pluto.png");
+  background-size: contain;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 50px;
+  height: 50px;
+  top: -500px;
+  left: 0px;
 }
 
 .solar-pluto:hover {
   opacity: 0.8;
   cursor: pointer;
 }
+
+/* pop up menu on planets - this is the close button (x) */
 
 .close-window {
   color: black;
@@ -588,7 +623,9 @@ li.dropdown {
   cursor: pointer;
 }
 
- .pop-up-card { 
+/* each planet pop-up displays an information card below */
+
+.pop-up-card { 
   height: 600px;
   width: 800px;
   border-radius: 20px;
@@ -600,6 +637,8 @@ li.dropdown {
   left: 24%;
   top: 20%;
 }
+
+/* top part of pop-up card displaying the picture of planet, and title of planet name */
 
 .planet-top {
   width: 600px;
@@ -625,17 +664,19 @@ li.dropdown {
 }
 
 .planet-title {
-position: absolute;
-left: 120px;
-top: 5px;
-width: 300px;
-height: 100px;
-line-height: 100px;
-font-family: "Revalia", cursive;
-font-size: 40px;
-color: black;
-text-align: left;
+  position: absolute;
+  left: 120px;
+  top: 5px;
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  font-family: "Revalia", cursive;
+  font-size: 40px;
+  color: black;
+  text-align: left;
 }
+
+/* the description of key facts of planets displayed in a table on popups */
 
 .planet-description {
   margin-top: 20px;
@@ -649,15 +690,19 @@ text-align: left;
   text-align: left;
 }
 
+/* hidden vertical display of planet data that will be changed from 'none' to 'block' on smaller screens with javascript */
+
 .planet-description-vertical {
   display: none;
 }
+
+/* column width of the first column in the data table of planet facts popup */
 
 th {
   width: 300px;
 }
 
-/* hangman game 'guessing word' setup */
+/* hangman game 'guessing word' */
 
 #word {
   font-family: "Revalia", cursive;
@@ -666,7 +711,7 @@ th {
   color: white;
 }
 
-/* hangman game 'keyboard' setup */
+/* hangman game 'keyboard' buttons */
 
 .letter {
   width: 8%;
@@ -684,7 +729,7 @@ th {
   cursor:pointer;
 }
 
-/* hangman game 'buttons' set up */
+/* hangman game + word game function buttons set up */
 
 .button {
   width: 30%;
@@ -702,11 +747,7 @@ th {
   background-color: lightgray;
 }
 
-#memory-reset {
-    width: 150px;
-}
-
-/* hangman 'image' setup */
+/* hangman lives image */
 
 #man {
   width: auto;
@@ -715,18 +756,24 @@ th {
   display: inline-block;
 }
 
-/* memory game - centre content */
+/* memory game reset button */
+
+#memory-reset {
+  width: 150px;
+}
+
+/* memory game area */
 
 .memorygame-area {
-display: block;
-width: 100%;
+  display: block;
+  width: 100%;
 }
 
 #my-memorygame {
   position: relative
 }
 
-/* scrambled word game */
+/* scrambled word game input box */
 #scramble-guess {
   font-size: 20px; 
   text-transform: uppercase;
@@ -739,15 +786,19 @@ width: 100%;
   position: relative;
 }
 
+/* scrambled word game submit button */
+
 #word-submit {
   position: relative;
   left: -120px;
 }
 
+/* scrambled word game - change word button */
+
 #change-word {
   position: relative;
-    left: 295px;
-    top: -102px;
+  left: 325px;
+  top: -102px;
 }
 
 .word-game-top {
@@ -756,6 +807,8 @@ width: 100%;
   font-family: 'Comfortaa', cursive;
 }
 
+/* scrambled word game category buttons */
+
 .word-game-btn {
   width: 20%;
   margin-left: 20px;
@@ -763,10 +816,10 @@ width: 100%;
 }
 
 .word-row-1 {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subject-title {
@@ -774,11 +827,15 @@ width: 100%;
   height: 100px;
 }
 
+/* scrambled word game category buttons section */
+
 .subject-options {
   width: 85%;
   height: 100px;
   line-height: 100px;
 }
+
+/* scrambled word main game section */
 
 .word-main-game {
   width: 100%;
@@ -795,10 +852,14 @@ width: 100%;
   width: 100%;
 }
 
+/* game categories title */
+
 h4 {
   color: white;
   font-size: 20px;
   }
+
+/* word game error message */
 
 h5 {
   color: lightcoral;
@@ -806,25 +867,32 @@ h5 {
   font-family: 'Comfortaa', cursive;
 }
 
+/* word game instructions */
+
 h6 {
   color: white;
   font-size: 20px;
   }
 
+/* word game display of scrambled letters to solve */
+
 .scrambled-word {
-color: white;
-font-size: 50px;
-font-family: 'Revalia', cursive;
+  color: white;
+  font-size: 50px;
+  font-family: 'Revalia', cursive;
 }
+
+/* word game submit button */
 
 .btn-check-answer {
   width: 150px;
   margin-left: 50px;
 }
 
-/* reduced sreeen sizes */
+/* layout adjustments for reduced sreeen sizes */
 
 @media screen and (max-width: 1393px) {
+  
   .body-top {
     height: 550px;
   }
@@ -842,6 +910,9 @@ font-family: 'Revalia', cursive;
     width: 70%;
     height: 400px;
   }
+
+  /* the below code moves the scores and reset button underneath the game area on smaller screens */
+
   .top-right-column {
     width: 100%;
     height: 150px;
@@ -852,8 +923,8 @@ font-family: 'Revalia', cursive;
   }
 
   .row-2 {
-  height: 200px;
-}
+    height: 200px;
+  }
    
   .logo-container {
     width: 50%;
@@ -862,20 +933,22 @@ font-family: 'Revalia', cursive;
   .nav {
     width: 45%;
   }
-.menu {
-  width: 130%;
-}
+  
+  .menu {
+    width: 130%;
+  }
 
-.memorygame-middle-column {
+  .memorygame-middle-column {
     width: 25%;
- }
+  }
 
-#map {
-  width: 800px;
-}
+  #map {
+    width: 800px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  
   .pop-up-card { 
     height: 600px;
     width: 800px;
@@ -887,6 +960,8 @@ font-family: 'Revalia', cursive;
 
 @media screen and (max-width: 1100px) {
 
+  /* main navigation bar switchesz to mobile navigation bar */
+  
   .nav {
     display: none;
   }
@@ -908,115 +983,115 @@ font-family: 'Revalia', cursive;
     width: 60%;
   }
 
-.memorygame-middle-column {
+  .memorygame-middle-column {
     width: 30%;
- }
+  }
 }
 
 @media screen and (max-width: 1056px) {
 
-.subject-title {
-  width: 15%;
-}
+  .subject-title {
+    width: 15%;
+  }
 
-.subject-options {
-  width: 85%;
-}
-.word-game-btn {
-  margin-left: 0;
-  margin-right: 0;
-}
+  .subject-options {
+    width: 85%;
+  }
 
-#change-word {
+  .word-game-btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #change-word {
     left: 250px;
     top: -102px;
-}
+  }
 }
 
 @media screen and (max-width: 1022px) {
 
-.solar-sun {
+  .solar-sun {
     top: 200px;
     left: 400px;
-}
+  }
 
- .solar-mercury {
-     top: 50px;
+  .solar-mercury {
+    top: 50px;
     left: 350px;
-}
+  }
 
- .solar-venus {
+  .solar-venus {
     top: -200px;
     left: 550px;
-}
+  }
 
-.solar-earth {
+  .solar-earth {
     top: 50px;
     left: 550px;
-}
+  }
 
-.solar-mars {
-  left: 350px;
-}
+  .solar-mars {
+    left: 350px;
+  }
 
- .solar-jupiter {
+  .solar-jupiter {
     left: 150px;
-}
+  }
 
-.solar-saturn {
-  left: 150px;
-}
+  .solar-saturn {
+    left: 150px;
+  }
 
-.solar-uranus {
+  .solar-uranus {
     top: -600px;
     left: 650px;
-}
+  }
 
-.solar-neptune {
+  .solar-neptune {
     left: 400px;
     top: -850px
-}
+  }
 
-.solar-pluto {
+  .solar-pluto {
     top: -500px;
     left: 200px;
-}
+  }
 }
 
 @media screen and (max-width: 992px) {
  
-.row-1 {
-  width: 100%;
-  height: 150px;
-}
+  .row-1 {
+    width: 100%;
+    height: 150px;
+  }
 
-.row-2 {
-  width: 100%;
-  height: 200px;
-}
+  .row-2 {
+    width: 100%;
+    height: 200px;
+  }
 
-.memorygame-middle-column {
+  .memorygame-middle-column {
     width: 35%;
- }
+  }
 
- .pop-up-card { 
-  height: 600px;
-  width: 600px;
-  left: 15%;
-  top: 20%;
-}
+  .pop-up-card { 
+    height: 600px;
+    width: 600px;
+    left: 15%;
+    top: 20%;
+  }
 
-.planet-description {
-  left: 50px;
-  margin-top: 0;
-  font-size: 18px;
-  top: 120px;
-}
+  .planet-description {
+    left: 50px;
+    margin-top: 0;
+    font-size: 18px;
+    top: 120px;
+  }
 
-.planet-pic-outer {
-  top: -80px;
-}
-
+  .planet-pic-outer {
+    top: -80px;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -1028,57 +1103,57 @@ font-family: 'Revalia', cursive;
   .solar-sun {
     top: 200px;
     left: 300px;
-}
+  }
 
- .solar-mercury {
+  .solar-mercury {
      top: 50px;
     left: 250px;
-}
+  } 
 
- .solar-venus {
+  .solar-venus {
     top: -200px;
     left: 450px;
-}
+  }
 
-.solar-earth {
+  .solar-earth {
     top: 50px;
     left: 450px;
-}
+  }
 
-.solar-mars {
-  left: 250px;
-}
+  .solar-mars {
+    left: 250px;
+  }
 
- .solar-jupiter {
+  .solar-jupiter {
     left: 50px;
-}
+  }
 
-.solar-saturn {
-  left: 50px;
-}
+  .solar-saturn {
+    left: 50px;
+  }
 
-.solar-uranus {
+  .solar-uranus {
     top: -600px;
     left: 550px;
-}
+  }
 
-.solar-neptune {
+  .solar-neptune {
     left: 300px;
     top: -850px
-}
+  }
 
-.solar-pluto {
+  .solar-pluto {
     top: -500px;
     left: 100px;
-}
+  }
 
   /* black margin above hangman on mobile screens */
 
- .sub-body-top-title {
-  height: 10px;
-  width: 100%;
-  background-color: black;
-}
+  .sub-body-top-title {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+  }
   
   .top-left-column {
     width: 100%;
@@ -1109,78 +1184,81 @@ font-family: 'Revalia', cursive;
   .top-right-column {
     height: 80px;
   }
-.memorygame-middle-column {
+
+  .memorygame-middle-column {
     width: 40%;
- }
+  }
 
- #map {
-  width: 600px;
-}
+  #map {
+    width: 600px;
+  }
 
-#scramble-guess {
-  left: 20px;
-  width: 450px;
-}
+  #scramble-guess {
+    left: 20px;
+    width: 450px;
+  }
 
-#word-submit {
-  left: 0px;
-}
+  #word-submit {
+    left: 0px;
+  }
 
-#change-word {
+  #change-word {
     left: 0px;
     top: 0px;
-
-}
+  }
 }
 
 @media screen and (max-width: 750px) {
+  
   .memorygame-middle-column {
     width: 45%;
- }
- .word-row-1 {
-  height: 130px;
-  width: 100%;
-}
-.subject-title {
-  width: 100%;
-  height: 50px;
-}
+  }
+ 
+  .word-row-1 {
+    height: 130px;
+    width: 100%;
+  }
 
-.subject-options {
-  width: 100%;
-  height: 80px;
-  line-height: 80px;
-}
+  .subject-title {
+    width: 100%;
+    height: 50px;
+  }
 
-.word-game-btn {
-  width: 22%;
-  font-size: 13px;
-}
+  .subject-options {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+  }
 
-#scramble-guess {
-  width: 80%;
-}
+  .word-game-btn {
+    width: 22%;
+    font-size: 13px;
+  }
 
-.pop-up-card { 
-  height: 600px;
-  width: 600px;
-  left: 5%;
-  top: 20%;
-}
+  #scramble-guess {
+    width: 80%;
+  }
 
-#word-submit {
-  left: -100px;
-  top: -30px;
-}
+  .pop-up-card { 
+    height: 600px;
+    width: 600px;
+    left: 5%;
+    top: 20%;
+  }
 
-#change-word {
+  #word-submit {
+    left: -100px;
+    top: -30px;
+  }
+
+  #change-word {
     left: 100px;
     top: -100px;
-}
+  }
 
-#scramble-guess {
-  left: 0;
-}
+  #scramble-guess {
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 685px) {
@@ -1189,109 +1267,108 @@ font-family: 'Revalia', cursive;
     font-size: 40px;
   } 
   
-    #word-submit {
+  #word-submit {
     left: -120px;
     top: -30px;
   }
   
   #change-word {
-      left: 70px;
-      top: -100px;
+    left: 70px;
+    top: -100px;
   }
 
   .solar-outer {
-       height: 650px;
-   }
+    height: 650px;
+  }
    
-    .solar-sun {
+  .solar-sun {
     height: 100px;
     width: 100px;
     top: 350px;
-    left: 250px;
-    
-}
+    left: 250px;   
+  }
 
- .solar-mercury {
-     top: 100px;
+  .solar-mercury {
+    top: 100px;
     left: 250px;
     height: 100px;
     width: 100px;
-}
+  }
 
- .solar-venus {
+  .solar-venus {
     top: -50px;
     left: 400px;
-}
+  }
 
-.solar-earth {
+  .solar-earth {
     top: 150px;
     left: 400px;
-}
+  }
 
-.solar-mars {
+  .solar-mars {
     height: 100px;
     width: 100px;
     top: 100px;
-}
+  }
 
- .solar-jupiter {
+  .solar-jupiter {
     left: 100px;
     top: -350px;
     height: 100px;
     width: 100px;
-}
+  }
 
-.solar-saturn {
+  .solar-saturn {
     height: 100px;
     width: 100px;
     top: -300px;
     left: 100px;
-}
+  }
 
-.solar-uranus {
+  .solar-uranus {
     top: -400px;
     left: 400px;
-}
+  }
 
-.solar-neptune {
+  .solar-neptune {
     left: 250px;
     top: -750px;
-}
+  }
 
-.solar-pluto {
+  .solar-pluto {
     top: -450px;
     left: 100px;
     height: 100px;
     width: 100px;
-}
+  }
 
-.pop-up-card { 
-  height: 600px;
-  width: 400px;
-  left: 15%;
-  top: 20%;
-}
+  .pop-up-card { 
+    height: 600px;
+    width: 400px;
+    left: 15%;
+    top: 20%;
+  }
 
-.planet-description {
-  left: 20px;
-  font-size: 16px;
-}
+  .planet-description {
+    left: 20px;
+    font-size: 16px;
+  }
 
-th {
-  width: 200px;
+  th {
+    width: 200px;
+  }
 }
-
- }
 
 @media screen and (max-width: 620px) {
+  
   .memorygame-middle-column {
     width: 50%;
  }
-#map {
-  height: 400px;
-  width: 400px;
-}
 
+  #map {
+    height: 400px;
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -1306,10 +1383,9 @@ th {
   }
   
   #change-word {
-      left: 90px;
-      top: -60px;
+    left: 90px;
+    top: -60px;
   }
-
 
   .btn-check-answer {
     width: 150px;
@@ -1319,133 +1395,131 @@ th {
   }
  
   .memorygame-middle-column {
-  width: 60%;
- }
+    width: 60%;
+  }
    
- .solar-sun {
-  height: 100px;
-  width: 100px;
-  top: 330px;
-  left: 160px;
-  
-}
+  .solar-sun {
+    height: 100px;
+    width: 100px;
+    top: 330px;
+    left: 160px;
+  }
 
-.solar-mercury {
-   top: 80px;
-  left: 160px;
-  height: 100px;
-  width: 100px;
-}
+  .solar-mercury {
+    top: 80px;
+    left: 160px;
+    height: 100px;
+    width: 100px;
+  }
 
-.solar-venus {
-  top: -70px;
-  left: 300px;
-}
+  .solar-venus {
+    top: -70px;
+    left: 300px;
+  }
 
-.solar-earth {
-  top: 130px;
-  left: 300px;
-}
+  .solar-earth {
+    top: 130px;
+    left: 300px;
+  }
 
-.solar-mars {
-  height: 100px;
-  width: 100px;
-  top: 80px;
-  left: 160px;
-}
+  .solar-mars {
+    height: 100px;
+    width: 100px;
+    top: 80px;
+    left: 160px;
+  }
 
-.solar-jupiter {
-  left: 20px;
-  top: -370px;
-  height: 100px;
-  width: 100px;
-}
+  .solar-jupiter {
+    left: 20px;
+    top: -370px;
+    height: 100px;
+    width: 100px;
+  }
 
-.solar-saturn {
-  height: 100px;
-  width: 100px;
-  top: -330px;
-  left: 20px;
-}
+  .solar-saturn {
+    height: 100px;
+    width: 100px;
+    top: -330px;
+    left: 20px;
+  }
 
-.solar-uranus {
-  top: -420px;
-  left: 300px;
-}
+  .solar-uranus {
+    top: -420px;
+    left: 300px;
+  }
 
-.solar-neptune {
-  left: 160px;
-  top: -770px;
-}
+  .solar-neptune {
+    left: 160px;
+    top: -770px;
+  }
 
-.solar-pluto {
-  top: -470px;
-  left: 20px;
-  height: 100px;
-  width: 100px;
-}
+  .solar-pluto {
+    top: -470px;
+    left: 20px;
+    height: 100px;
+    width: 100px;
+  }
 
-.pop-up-card { 
-  height: 600px;
-  width: 375px;
-  left: 5%;
-  top: 20%;
-}
+  .pop-up-card { 
+    height: 600px;
+    width: 375px;
+    left: 5%;
+    top: 20%;
+  }
 
-.rocket-outer {
-  width: 100%;
-  height: 150px;
-}
+  /* the below code moves the welcome message underneath the rocket animation on home page */
 
-.welcome {
-  width: 100%;
-  height: 300px;
-}
+  .rocket-outer {
+    width: 100%;
+    height: 150px;
+  }
 
-.rocket {
-  position: relative;
-  width: 200px;
-  top: 50px;
-  z-index: 1;
-  animation: rocket_moving 0.1s alternate infinite;
-  left: 0;
-}
+  .welcome {
+    width: 100%;
+    height: 300px;
+  }
 
+  .rocket {
+    position: relative;
+    width: 200px;
+    top: 50px;
+    z-index: 1;
+    animation: rocket_moving 0.1s alternate infinite;
+    left: 0;
+  }
 }
-
-/* the below code fixes layout issues with the scores and reset button on smaller screens */
 
 @media screen and (max-width: 485px) {
+  
   .scores h3 {
-     line-height: 25px;
+    line-height: 25px;
   }
+
   .memorygame-middle-column {
     width: 70%;
   }
 }
 
-/* the below code fixes layout issues with the scores and reset button on smaller screens */
-
 @media screen and (max-width: 482px) {
 
-    .scores button {
+  .scores button {
     line-height: 25px;
     position: relative;
     top: -10px;
     height: 45px;
   }
- .memorygame-middle-column {
+  
+  .memorygame-middle-column {
     width: 80%;
- }
+  }
 
- .top-right-column {
-  line-height: 100px;
-}
+  .top-right-column {
+    line-height: 100px;
+  }
 
-#word-scrambler-game {
-  margin-top: 20px
-}
-
+  #word-scrambler-game {
+    margin-top: 20px
+  }
 }
 
 /* iphone 12 pro max */
@@ -1453,475 +1527,485 @@ th {
 @media screen and (max-width: 428px) {
   .memorygame-middle-column {
     width: 65%;
- }
- .top-right-column {
-  line-height: 80px;
-}
+  }
 
-.subject-options {
-  width: 90%;
-}
+  .top-right-column {
+    line-height: 80px;
+  }
 
-.pop-up-card { 
-  height: 600px;
-  width: 390px;
-  left: 5%;
-  top: 20%;
-}
+  .subject-options {
+    width: 90%;
+  }
 
-.planet-description {
-  display: none;
-}
+  .pop-up-card { 
+    height: 600px;
+    width: 390px;
+    left: 5%;
+    top: 20%;
+  }
 
-.planet-description-vertical {
-  display: block;
-  position: relative;
-  top: -50px;
-}
+  .planet-description {
+    display: none;
+  }
 
-.planet-title {
-top: 20px;
-font-size: 30px;
-}
+  .planet-description-vertical {
+    display: block;
+    position: relative;
+    top: -50px;
+  }
 
+  .planet-title {
+    top: 20px;
+    font-size: 30px;
+  }
 }
 
 /* iphone XR/XS Max/11/11 pro max */
 
-  @media screen and (max-width: 414px) {
-    .memorygame-top {
-      height: 0px;
-    }
+@media screen and (max-width: 414px) {
   
-    .scores button {
+  .memorygame-top {
+    height: 0px;
+  }
+  
+  .scores button {
     line-height: 25px;
     position: relative;
     top: -25px;
     height: 60px;
   }
- .memorygame-middle-column {
+ 
+  .memorygame-middle-column {
     width: 70%;
- }
+  }
 
- #map {
-  height: 300px;
-  width: 300px;
-}
+  #map {
+    height: 300px;
+    width: 300px;
+  }
 
-#letters {
-  font-size: 0;
-}
+  #letters {
+    font-size: 0;
+  }
 
-.letter {
-  width: 11%;
-  height: 40px;
-  padding: 0 0;
-  margin: 0 0;
-}
+  .letter {
+    width: 11%;
+    height: 40px;
+    padding: 0 0;
+    margin: 0 0;
+  }
 
-.scores {
-  line-height: 130px;
-}
+  .scores {
+    line-height: 130px;
+  }
 
-.body-top {
-  height: 400px;
-}
+  .body-top {
+    height: 400px;
+  }
 
-.top-left-column {
-  height: 120px;
-}
+  .top-left-column {
+    height: 120px;
+  }
 
-#man {
-  width: 120px;
-  height: 120px;
-}
+  #man {
+    width: 120px;
+    height: 120px;
+  }
 
-.top-middle-column {
-  height: 280px;
-}
+  .top-middle-column {
+    height: 280px;
+  }
 
-.row-1 {
-  height: 50px;
-}
+  .row-1 {
+    height: 50px;
+  }
 
-#word {
-  font-size: 30px;
-}
+  #word {
+    font-size: 30px;
+  }
 
-.row-2 {
-  height: 150px;
-}
+  .row-2 {
+    height: 150px;
+  }
 
-.letters-outer {
-  height: 120px;
-}
+  .letters-outer {
+    height: 120px;
+  }
 
-.row-3 {
-  height: 80px;
-}
+  .row-3 {
+    height: 80px;
+  }
 
-.top-right-column {
-  height: 80px;
-}
+  .top-right-column {
+    height: 80px;
+  }
 
-.solar-sun {
-  left: 160px;
-  top: 180px;
-}
+  .solar-sun {
+    left: 160px;
+    top: 180px;
+  }
 
-.solar-mercury {
-  left: 160px;
-  top: -20px;
-}
+  .solar-mercury {
+    left: 160px;
+    top: -20px;
+  }
 
-.solar-venus {
-  left: 300px;
-  top: -170px;
-}
+  .solar-venus {
+    left: 300px;
+    top: -170px;
+  }
 
-.solar-earth {
-  left: 300px;
-  top: -70px;
-}
+  .solar-earth {
+    left: 300px;
+    top: -70px;
+  }
 
-.solar-mars {
-  left: 160px;
-  top: -120px;
-}
+  .solar-mars {
+    left: 160px;
+    top: -120px;
+  }
 
-.solar-jupiter {
-  left: 20px;
-  top: -470px;
-}
+  .solar-jupiter {
+    left: 20px;
+    top: -470px;
+  }
 
-.solar-saturn {
-  left: 20px;
-  top: -470px;
-}
+  .solar-saturn {
+    left: 20px;
+    top: -470px;
+  }
 
-.solar-uranus {
-  left: 300px;
-  top: -570px;
-}
+  .solar-uranus {
+    left: 300px;
+    top: -570px;
+  }
 
-.solar-neptune {
-  left: 160px;
-  top: -820px;
-}
+  .solar-neptune {
+    left: 160px;
+    top: -820px;
+  }
 
-.solar-pluto {
-  left: 20px;
-  top: -670px;
-}
+  .solar-pluto {
+    left: 20px;
+    top: -670px;
+  }
 
-.solar-large {
-  padding-top: 50px;
-}
+  .solar-large {
+    padding-top: 50px;
+  }
 
-.pop-up-card { 
-  height: 600px;
-  width: 350px;
-  left: 10%;
-  top: 20%;
-}
+  .pop-up-card { 
+    height: 600px;
+    width: 350px;
+    left: 10%;
+    top: 20%;
+  }
 }
 
 /* pixel 3, 3XL, iphone 12 / 12 pro / Galaxy S21 */
+
 @media screen and (max-width: 393px) { 
 
   .top-right-column {
     line-height: 80px;
   }
+
   .btn-reset {
-  width: 50px;
-}
+    width: 50px;
+  }
 
-.scores {
-  line-height: 100px;
-}
+  .scores {
+    line-height: 100px;
+  }
 
+  .solar-sun {
+    left: 150px;
+    top: 180px;
+  }
 
-.solar-sun {
-  left: 150px;
-  top: 180px;
-}
+  .solar-mercury {
+    left: 150px;
+    top: -20px;
+  }
 
-.solar-mercury {
-  left: 150px;
-  top: -20px;
-}
+  .solar-venus {
+    left: 280px;
+    top: -170px;
+  }
 
-.solar-venus {
-  left: 280px;
-  top: -170px;
-}
+  .solar-earth {
+    left: 280px;
+    top: -70px;
+  }
 
-.solar-earth {
-  left: 280px;
-  top: -70px;
-}
+  .solar-mars {
+    left: 150px;
+    top: -120px;
+  }
 
-.solar-mars {
-  left: 150px;
-  top: -120px;
-}
+  .solar-jupiter {
+    left: 20px;
+    top: -470px;
+  }
 
-.solar-jupiter {
-  left: 20px;
-  top: -470px;
-}
+  .solar-saturn {
+    left: 20px;
+    top: -470px;
+  }
 
-.solar-saturn {
-  left: 20px;
-  top: -470px;
-}
+  .solar-uranus {
+    left: 280px;
+    top: -570px;
+  }
 
-.solar-uranus {
-  left: 280px;
-  top: -570px;
-}
+  .solar-neptune {
+    left: 150px;
+    top: -820px;
+  }
 
-.solar-neptune {
-  left: 150px;
-  top: -820px;
-}
+  .solar-pluto {
+    left: 20px;
+    top: -670px;
+  }
 
-.solar-pluto {
-  left: 20px;
-  top: -670px;
-}
+  .pop-up-card { 
+    height: 600px;
+    width: 320px;
+    left: 10%;
+    top: 20%;
+  }
 
-.pop-up-card { 
-  height: 600px;
-  width: 320px;
-  left: 10%;
-  top: 20%;
-}
+  .close-window{
+    font-size: 50px;
+  }
 
-.close-window{
-  font-size: 50px;
-}
-.planet-pic-outer {
-  top: -50px;
-}
-.planet-description-vertical {
-  top: -30px;
-}
-
+  .planet-pic-outer {
+    top: -50px;
+  }
+  .planet-description-vertical {
+    top: -30px;
+  }
 }
 
 /* iphone XS, X, 11 pro, 12 mini */
+
 @media screen and (max-width: 375px) {
+
   .memorygame-middle-column {
     width: 75%;
     height: 420px;
   }
 
-.solar-sun {
-  left: 145px;
-  top: 180px;
-}
+  .solar-sun {
+    left: 145px;
+    top: 180px;
+  }
 
-.solar-mercury {
-  left: 145px;
-  top: -20px;
-}
+  .solar-mercury {
+    left: 145px;
+    top: -20px;
+  }
 
-.solar-venus {
-  left: 260px;
-  top: -170px;
-}
+  .solar-venus {
+    left: 260px;
+    top: -170px;
+  }
 
-.solar-earth {
-  left: 260px;
-  top: -70px;
-}
+  .solar-earth {
+    left: 260px;
+    top: -70px;
+  }
 
-.solar-mars {
-  left: 145px;
-  top: -120px;
-}
+  .solar-mars {
+    left: 145px;
+    top: -120px;
+  }
 
-.solar-jupiter {
-  left: 20px;
-  top: -470px;
-}
+  .solar-jupiter {
+    left: 20px;
+    top: -470px;
+  }
 
-.solar-saturn {
-  left: 20px;
-  top: -470px;
-}
+  .solar-saturn {
+    left: 20px;
+    top: -470px;
+  }
 
-.solar-uranus {
-  left: 260px;
-  top: -570px;
-}
+  .solar-uranus {
+    left: 260px;
+    top: -570px;
+  }
 
-.solar-neptune {
-  left: 145px;
-  top: -820px;
-}
+  .solar-neptune {
+    left: 145px;
+    top: -820px;
+  }
 
-.solar-pluto {
-  left: 20px;
-  top: -670px;
-}
+  .solar-pluto {
+    left: 20px;
+    top: -670px;
+  }
 
-.pop-up-card { 
-  height: 600px;
-  width: 340px;
-  left: 5%;
-  top: 20%;
-}
-
+  .pop-up-card { 
+    height: 600px;
+    width: 340px;
+    left: 5%;
+    top: 20%;
+  }
 }
 
 /* Galaxy S9/Note 8/S8 */
+
 @media screen and (max-width: 360px) {
+
   .memorygame-middle-column {
     width: 78%;
     height: 420px;
+  }
+
+  .solar-sun {
+    left: 130px;
+    top: 180px;
+  }
+
+  .solar-mercury {
+    left: 130px;
+    top: -20px;
+  }
+
+  .solar-venus {
+    left: 240px;
+    top: -170px;
+  }
+
+  .solar-earth {
+    left: 240px;
+    top: -70px;
+  }
+
+  .solar-mars {
+    left: 130px;
+    top: -120px;
+  }
+
+  .solar-jupiter {
+    left: 20px;
+    top: -470px;
+  }
+
+  .solar-saturn {
+    left: 20px;
+    top: -470px;
+  }
+
+  .solar-uranus {
+    left: 240px;
+    top: -570px;
+  }
+
+  .solar-neptune {
+    left: 130px;
+    top: -820px;
+  }
+
+  .solar-pluto {
+    left: 20px;
+    top: -670px;
+  }
+
+  .word-row-1 {
+    height: 200px;
+    width: 100%;
+  }
+
+  .subject-title {
+    width: 100%;
+    height: 40px;
+    line-height: 0px;
+    margin-top: 10px;
+  }
+
+  .subject-options {
+    width: 100%;
+    height: 120px;
+    line-height: 60px;
+  }
+
+  .word-game-btn {
+    width: 40%;
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .scrambled-word {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 18px;
+    margin-top: 15px;
+    height: 20px;
+  }
+
+  h6 {
+    font-size: 16px;
+    padding-top: 20px;
+    margin-top: 15px;
+    height: 15px;
 }
 
-.solar-sun {
-  left: 130px;
-  top: 180px;
-}
+  #scramble-guess {
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    top: -20px;
+  }
 
-.solar-mercury {
-  left: 130px;
-  top: -20px;
-}
+  #word-submit {
+    left: -70px;
+    top: -20px;
+  }
 
-.solar-venus {
-  left: 240px;
-  top: -170px;
-}
-
-.solar-earth {
-  left: 240px;
-  top: -70px;
-}
-
-.solar-mars {
-  left: 130px;
-  top: -120px;
-}
-
-.solar-jupiter {
-  left: 20px;
-  top: -470px;
-}
-
-.solar-saturn {
-  left: 20px;
-  top: -470px;
-}
-
-.solar-uranus {
-  left: 240px;
-  top: -570px;
-}
-
-.solar-neptune {
-  left: 130px;
-  top: -820px;
-}
-
-.solar-pluto {
-  left: 20px;
-  top: -670px;
-}
-.word-row-1 {
-  height: 200px;
-  width: 100%;
-}
-.subject-title {
-  width: 100%;
-  height: 40px;
-  line-height: 0px;
-  margin-top: 10px;
-}
-
-.subject-options {
-  width: 100%;
-  height: 120px;
-  line-height: 60px;
-}
-
-.word-game-btn {
-  width: 40%;
-  font-size: 13px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.scrambled-word {
-  font-size: 24px;
-}
-
-h5 {
-  font-size: 18px;
-  margin-top: 15px;
-  height: 20px;
-}
-
-h6 {
-  font-size: 16px;
-  padding-top: 20px;
-  margin-top: 15px;
-  height: 15px;
-}
-
-#scramble-guess {
-  width: 90%;
-  height: 40px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  top: -20px;
-}
-
-#word-submit {
-  left: -70px;
-  top: -20px;
-}
-
-#change-word {
+  #change-word {
     left: 70px;
     top: -90px;
-}
+  }
 
-.btn-check-answer {
-  width: 30%;
-}
+  .btn-check-answer {
+    width: 30%;
+  }
 
-.word-main-game {
-  width: 100%;
-  height: 300px;
-}
+  .word-main-game {
+    width: 100%;
+    height: 300px;
+  }
 
-.word-row-2 {
-  height: 250px;
-  width: 100%;
-}
+  .word-row-2 {
+    height: 250px;
+    width: 100%;
+  }
 
-.word-row-3 {
-  height: 50px;
-  width: 100%;
-}
+  .word-row-3 {
+    height: 50px;
+    width: 100%;
+  }
 
-.pop-up-card { 
-  height: 550px;
-  width: 330px;
-  left: 5%;
-  top: 22%;
-}
+  .pop-up-card { 
+    height: 550px;
+    width: 330px;
+    left: 5%;
+    top: 22%;
+  }
 }
 
 /* iphone 5/SE */
+
 @media screen and (max-width: 320px) {
+
   #mobile-nav-menu ul li {
     font-size: 16px;
   }
@@ -1930,104 +2014,109 @@ h6 {
     height: 250px;
     width: 250px;
   }
+
   .memorygame-top {
     height: 0px;
   }
-    .memorygame-middle-column {
-      width: 87%;
-      height: 420px;
-}
 
-.solar-title > h4 {
-font-size: 14px;
-}
+  .memorygame-middle-column {
+    width: 87%;
+    height: 420px;
+  }
 
-.solar-title {
-  top: -10px;
-}
+  .solar-title > h4 {
+    font-size: 14px;
+  }
 
-.solar-sun {
-  left: 110px;
-  top: 180px;
-}
+  .solar-title {
+    top: -10px;
+  }
 
-.solar-mercury {
-  left: 110px;
-  top: -20px;
-}
+  .solar-sun {
+    left: 110px;
+    top: 180px;
+  }
 
-.solar-venus {
-  left: 200px;
-  top: -150px;
-}
+  .solar-mercury {
+    left: 110px;
+    top: -20px;
+  }
 
-.solar-earth {
-  left: 200px;
-  top: -50px;
-}
+  .solar-venus {
+    left: 200px;
+    top: -150px;
+  }
 
-.solar-mars {
-  left: 110px;
-  top: -120px;
-}
+  .solar-earth {
+    left: 200px;
+    top: -50px;
+  }
 
-.solar-jupiter {
-  left: 10px;
-  top: -470px;
-}
+  .solar-mars {
+    left: 110px;
+    top: -120px;
+  }
 
-.solar-saturn {
-  left: 10px;
-  top: -470px;
-}
+  .solar-jupiter {
+    left: 10px;
+    top: -470px;
+  }
 
-.solar-uranus {
-  left: 200px;
-  top: -550px;
-}
+  .solar-saturn {
+    left: 10px;
+    top: -470px;
+  }
 
-.solar-neptune {
-  left: 110px;
-  top: -820px;
-}
+  .solar-uranus {
+    left: 200px;
+    top: -550px;
+  }
 
-.solar-pluto {
-  left: 10px;
-  top: -670px;
-}
+  .solar-neptune {
+    left: 110px;
+    top: -820px;
+  }
 
-.solar-large {
-  padding-top: 0px;
-}
-.pop-up-card { 
-  height: 350px;
-  width: 280px;
- left: 7%;
- top: 30%
-}
+  .solar-pluto {
+    left: 10px;
+    top: -670px;
+  }
 
-.planet-pic-outer {
-  margin-left: -5px;
-  top: -70px;
-}
+  .solar-large {
+    padding-top: 0px;
+  }
 
-.planet-pic {
-  width: 80px;
-  height: 80px;
-}
+  .pop-up-card { 
+    height: 350px;
+    width: 280px;
+    left: 7%;
+    top: 30%
+  }
 
-.planet-title {
-  top: -15px;
-  font-size: 20px;
-  left: 90px;
-}
+  .planet-pic-outer {
+    margin-left: -5px;
+    top: -70px;
+  }
 
-.planet-description-vertical {
-  top: -100px;
-  font-size: 12px;
+  .planet-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .planet-title {
+    top: -15px;
+    font-size: 20px;
+    left: 90px;
+  }
+
+  .planet-description-vertical {
+    top: -100px;
+    font-size: 12px;
+  }
 }
 
 /* samsung galaxy fold */
+
 @media screen and (max-width: 300px) {
 
   #welcome-sub {
@@ -2037,24 +2126,25 @@ font-size: 14px;
   .memorygame-middle-column {
     width: 100%;
     height: 420px;
-}
-.memorygame-top {
-  height: 0px;
-}
+  }
 
-.solar-sun {
-  left: 95px;
-  top: 170px;
-  height: 90px;
-  width: 90px;
-}
+  .memorygame-top {
+    height: 0px;
+  }
 
-.solar-mercury {
-  left: 95px;
-  top: -10px;
-  height: 90px;
-  width: 90px;
-}
+  .solar-sun {
+    left: 95px;
+    top: 170px;
+    height: 90px;
+    width: 90px;
+  }
+
+  .solar-mercury {
+    left: 95px;
+    top: -10px;
+    height: 90px;
+    width: 90px;
+  }
 
 .solar-venus {
   left: 185px;
@@ -2115,6 +2205,5 @@ font-size: 14px;
 .pop-up-card { 
    width: 250px;
   left: 5%;
- }
-
+  }
 }
