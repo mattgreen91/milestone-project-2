@@ -15,37 +15,47 @@ var pluto_card = document.getElementById("pluto");
 
 function sun() {
   sun_card.style.display = "block";
+  console.log("pop-up facts about Sun is shown");
 }
 
 function mercury() {
   mercury_card.style.display = "block";
+  console.log("pop-up facts about Mercury is shown");
 }
 
 function venus() {
   venus_card.style.display = "block";
+  console.log("pop-up facts about Venus is shown");
 }
 
 function earth() {
   earth_card.style.display = "block";
+  console.log("pop-up facts about Earth is shown");
 }
 
 function mars() {
   mars_card.style.display = "block";
+  console.log("pop-up facts about Mars is shown");
 }
 function jupiter() {
   jupiter_card.style.display = "block";
+  console.log("pop-up facts about Jupiter is shown");
 }
 function saturn() {
   saturn_card.style.display = "block";
+  console.log("pop-up facts about Saturn is shown");
 }
 function uranus() {
   uranus_card.style.display = "block";
+  console.log("pop-up facts about Uranus is shown");
 }
 function neptune() {
   neptune_card.style.display = "block";
+  console.log("pop-up facts about Neptune is shown");
 }
 function pluto() {
   pluto_card.style.display = "block";
+  console.log("pop-up facts about Pluto is shown");
 }
 
 // below functions convert the pop-up from 'display: block' to 'display: none' when the button or DIV is clicked on again
