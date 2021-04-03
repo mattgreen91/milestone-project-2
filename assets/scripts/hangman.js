@@ -37,7 +37,7 @@ function buildGame(score1, score2) {
 
   document.getElementById("man").src = "assets/images/h0.png";
   document.getElementById("man").alt =
-    incorrectGuesses + " of 5 lives remaining";
+    incorrectGuesses + " of 5 lives used";
   document.getElementById("won").innerHTML = won;
   document.getElementById("lost").innerHTML = lost;
 
