@@ -1380,6 +1380,7 @@ h6 {
     line-height: 25px;
     word-wrap: normal;
   }
+}
 
 @media screen and (max-width: 620px) {
   
@@ -2168,64 +2169,64 @@ h6 {
     width: 90px;
   }
 
-.solar-venus {
-  left: 185px;
-  top: -160px;
-  height: 90px;
-  width: 90px;
-}
+  .solar-venus {
+    left: 185px;
+    top: -160px;
+    height: 90px;
+    width: 90px;
+  }
 
-.solar-earth {
-  left: 185px;
-  top: -55px;
-  height: 90px;
-  width: 90px;
-}
+  .solar-earth {
+    left: 185px;
+    top: -55px;
+    height: 90px;
+    width: 90px;
+  }
 
-.solar-mars {
-  left: 95px;
-  top: -95px;
-  height: 90px;
-  width: 90px;
-}
+  .solar-mars {
+    left: 95px;
+    top: -95px;
+    height: 90px;
+    width: 90px;
+  }
 
-.solar-jupiter {
-  left: 5px;
-  top: -430px;
-  height: 90px;
-  width: 90px;
-}
+  .solar-jupiter {
+    left: 5px;
+    top: -430px;
+    height: 90px;
+    width: 90px;
+  }
 
-.solar-saturn {
-  left: 5px;
-  top: -420px;
-  height: 90px;
-  width: 90px;
-}
+  .solar-saturn {
+    left: 5px;
+    top: -420px;
+    height: 90px;
+    width: 90px;
+  }
 
-.solar-uranus {
-  left: 185px;
-  top: -515px;
-  height: 90px;
-  width: 90px;
-}
+  .solar-uranus {
+    left: 185px;
+    top: -515px;
+    height: 90px;
+    width: 90px;
+  }
 
-.solar-neptune {
-  left: 95px;
-  top: -730px;
-  height: 90px;
-  width: 90px;
-}
+  .solar-neptune {
+    left: 95px;
+    top: -730px;
+    height: 90px;
+    width: 90px;
+  }
 
-.solar-pluto {
-  left: 5px;
-  top: -590px;
-  height: 90px;
-  width: 90px;
-}
+  .solar-pluto {
+    left: 5px;
+    top: -590px;
+    height: 90px;
+    width: 90px;
+  }
 
-.pop-up-card { 
-   width: 250px;
-  left: 5%;
+  .pop-up-card { 
+    width: 250px;
+    left: 5%;
   }
 }

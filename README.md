@@ -79,7 +79,7 @@ The project has many features such as:
 
 * Fall-back fonts, in case Google Fonts are not compatible with the browser
 * Alternate Text' attributes for images, in case the images do not display
-* Fall-back messages in the iFrames, in case the iFrames are not compatible with the browser
+* Banner displays at the top of the screen when Javascript disabled in browser, prompting user to enable
 * 'ARIA Hidden' attributes (Accessible Rich Internet Applications), and 'Screen-Reader Only' attributes to make it easier for Screen Readers
 * @media Queries, to modify content to fit different sized screens
 
