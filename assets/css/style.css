@@ -1,3 +1,18 @@
+/* banner to display message when javascript disabled */
+
+#javascript-disabled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
 /* font family imports from google fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Bahiana&family=Comfortaa&family=GFS+Neohellenic&family=Revalia&display=swap");
@@ -1358,6 +1373,13 @@ h6 {
     width: 200px;
   }
 }
+
+@media screen and (max-width: 673px) {
+  
+  #javascript-disabled {
+    line-height: 25px;
+    word-wrap: normal;
+  }
 
 @media screen and (max-width: 620px) {
   
