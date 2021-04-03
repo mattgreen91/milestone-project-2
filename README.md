@@ -8,9 +8,9 @@ I have chosen to design a website for young explorers, which displays informatio
 
  _**You can access the completed website by [clicking here](https://mattgreen91.github.io/milestone-project-2/index.html) :rocket:**_
 
-The website was created using HTML5, CSS, Javascript, JQuery, JSON and APIs such as Google Maps.
+The website was created using HTML5, CSS, Javascript, JQuery, JSON and external APIs and Plug-ins.
 
-The website has been designed and tested to be fully functional on all devices, including a drop-down mobile navigation menu for small devices.
+The website has been designed and tested to be fully functional on all devices, including a drop-down mobile navigation menu for smaller devices.
 
 <img src="assets/readme-files/example-1.png" width="800" style="margin: 0;"> <img src="assets/readme-files/example-2.png" width="200" style="margin: 0;"> <img src="assets/readme-files/example-3.png" width="600" style="margin: 0;">
  
@@ -25,21 +25,28 @@ The website has been designed and tested to be fully functional on all devices, 
 
 ## 1. UX - User Experience 
  
-The Website is predominantly designed for teenagers, but can be used by anyone with an interest in space.  The user is able to learn key facts about all of the planets in our solar system.  They are also able to play fun games to learn pictures and names of planets and galaxies, and learn the names of some of the moons in our solar system.  The user can also view an interactive map which displays the live coordinates of the International Space Satellite plotted onto the map.  There is also animations and hover effects to make the page more fun. 
+The Website is predominantly designed for teenagers who are learning for education, but it can be used by anyone with an interest in space.  
+
+The user is able to learn key facts about all of the planets in our solar system.  
+
+The user is able to play fun games to learn pictures and names of planets and galaxies, and learn the names of some of the moons in our solar system.  
+
+The user can also view an interactive map which displays the live coordinates of the International Space Satellite plotted onto the map.  
+
+There is also animations and hover effects to make the page more fun. 
 
 **User Stories**
 
 - As a user, I want the website layout to be clear and concise.
 - As a user, I want the colours to be appealing but also easy on the eye.
 - As a user, I want the navigation to be easy to use, and for me not to get lost in the website.
-- As a user, I want all the links to work correctly, and if external - to open in new windows, so I do not get lost.
-- As a user, I want some animation to make the website more appealing.
+- As a user, I want all the links to work correctly.
+- As a user, I want the website to be very interactive.
 - As a user, I don't want too much text to scroll through.
 - As a user, I want all the information to be easy to find.
 - As a user, I want all the images to be clear, not pixelised.
-- As a user, I want all the sounds and videos to work correctly, and play the correct media source.
-- As a user, I want to be able to be able to contact, with the option of subscribing.
-- As a user, I want the content to adjust automatically when using multiple screen sizes and devices
+- As a user, I want the map and games to be fun and work correctly.
+- As a user, I want the content to adjust automatically when using multiple screen sizes and devices.
 - As a user, I want some animation so the page is appealing.
 
 **Design**
@@ -50,10 +57,13 @@ This project was designed with Balsamiq Wireframes, which can be seen below:
 
 <img src="assets/readme-files/wireframe_2.png" width="1000" style="margin: 0;">
 
-This project was created with a boiler template.
+At first I created the basic layout by making a boilerplate, that you can find [here](assets/boilerplate/boilerplate.html).
+
+Although my project only required me to use either Vanilla Javascript, JQuery, JSON, APIs or plug-ins, I decided that I wanted to use all of these in my project to demonstrate the skills that I have learnt.
 
 
-The planet page was made using excel.
+
+The planet page was made using excel. assets/readme-files/planet_grid.xlsx
 
 <img src="assets/readme-files/planet_4.png" width="500" style="margin: 0;">
 
