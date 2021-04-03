@@ -58,6 +58,7 @@ function initMap() {
 
     /* refreshes every 5 seconds (5000 miliseconds) for "live" location */
 
-    console.log(track);
+     console.log("the coordinates of the map are ");
+     console.log(track);
   }, 5000);
 }
