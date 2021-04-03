@@ -21,8 +21,7 @@ function changeWord() {
   score1 = document.getElementById("won").innerHTML;
   score2 = document.getElementById("lost").innerHTML;
   buildGame(won, lost);
-  console.log(won);
-  console.log(lost);
+  console.log("current score: " + won + " won, " + lost + " lost" );
 }
 
 // buildGame recieves the won and lost values from resetGame, or checkWon fuction
@@ -54,9 +53,12 @@ function buildGame(score1, score2) {
     "pluto",
   ];
 
+  console.log("the list of possible words are " + allAnswers);
+
   // selects one answer randomly
   let i = Math.floor(Math.random() * allAnswers.length);
   gameAnswer = allAnswers[i];
+  console.log("the correct answer to guess is " + gameAnswer);
   // converts the word into an array of letters
   gameAnswerLetters = gameAnswer.split("");
   // creates an empty array of hidden answer letters
@@ -97,6 +99,7 @@ function buildKeyboard() {
 function guessAnswer(key) {
   let guess = [];
   guess.indexOf(key) === -1 ? guess.push(key) : null;
+  console.log("the letter guessed is " + key);
   // this disables the button once it has been pressed
   document.getElementById(key).setAttribute("disabled", true);
   document.getElementById(key).style.backgroundColor = "#cdcdcd";
@@ -115,6 +118,7 @@ function guessAnswer(key) {
   // won score increments
   if (gameAnswer == document.getElementById("word").innerHTML) {
     alert("Well done! You won :) \n The word " + gameAnswer + " was correct");
+    console.log("the word was guessed correctly.  New game begins")
     won = won + 1;
     changeWord();
   }
@@ -142,7 +146,7 @@ function guessAnswer(key) {
     document.getElementById("man").src =
       "assets/css/images/h" + incorrectGuesses + ".png";
     document.getElementById("man").alt =
-      incorrectGuesses + " of 5 lives remaining";
+      incorrectGuesses + " of 5 lives used";
   }
 
   // if all lives are lost, then the game it will display a message that the user has lost, and give a new word
