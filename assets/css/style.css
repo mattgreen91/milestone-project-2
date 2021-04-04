@@ -28,6 +28,7 @@ body {
     font-size: 14px;
     padding-left: 10px;
     padding-right: 10px;
+    overflow-wrap: break-word;
 }
 
 /* add flex to all rows more easily by using single class */
