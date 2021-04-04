@@ -7,6 +7,9 @@ var hiddenAnswerLetters;
 var gameAnswer;
 var incorrectGuesses = 0;
 var correctLetters = 0;
+var won = 0;
+var lost = 0;
+var wrongLetters = 0;
 
 function resetGame() {
   // new game starts with won and lost as 0-0
@@ -18,10 +21,10 @@ function resetGame() {
 
 // change word will keep the original score, and then build a new game using these scores
 function changeWord() {
-  score1 = document.getElementById("won").innerHTML;
-  score2 = document.getElementById("lost").innerHTML;
-  buildGame(won, lost);
-  console.log("current score: " + won + " won, " + lost + " lost" );
+  let score1 = document.getElementById("won").innerHTML;
+  let score2 = document.getElementById("lost").innerHTML;
+  buildGame(score1, score2);
+  console.log("current score: " + score1 + " won, " + score2 + " lost" );
 }
 
 // buildGame recieves the won and lost values from resetGame, or checkWon fuction
@@ -118,7 +121,7 @@ function guessAnswer(key) {
   // won score increments
   if (gameAnswer == document.getElementById("word").innerHTML) {
     alert("Well done! You won :) \n The word " + gameAnswer + " was correct");
-    console.log("the word was guessed correctly.  New game begins")
+    console.log("the word was guessed correctly.  New game begins");
     won = won + 1;
     changeWord();
   }
