@@ -25,7 +25,9 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* add flex to all rows more easily by using single class */
@@ -1374,14 +1376,6 @@ h6 {
   }
 }
 
-@media screen and (max-width: 673px) {
-  
-  #javascript-disabled {
-    line-height: 25px;
-    word-wrap: normal;
-  }
-}
-
 @media screen and (max-width: 620px) {
   
   .memorygame-middle-column {
@@ -1391,6 +1385,14 @@ h6 {
   #map {
     height: 400px;
     width: 400px;
+  }
+}
+
+@media screen and (max-width: 591px) {
+  
+  #javascript-disabled {
+    line-height: 25px;
+    word-wrap: normal;
   }
 }
 
