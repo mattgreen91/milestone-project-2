@@ -249,7 +249,7 @@ li.dropdown {
 
 @keyframes stars_moving {   
   from {
-    background-position: 0px left;
+    background-position: left;
   }
   to {
     background-position: 0px bottom;
