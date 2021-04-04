@@ -879,7 +879,7 @@ h4 {
 
 /* word game error message */
 
-h5 {
+#game-warning {
   color: lightcoral;
   font-size: 24px;
   font-family: 'Comfortaa', cursive;
@@ -887,7 +887,7 @@ h5 {
 
 /* word game instructions */
 
-h6 {
+#game-instruction {
   color: white;
   font-size: 20px;
   }
@@ -1970,13 +1970,13 @@ h6 {
     font-size: 24px;
   }
 
-  h5 {
+  #game-warning {
     font-size: 18px;
     margin-top: 15px;
     height: 20px;
   }
 
-  h6 {
+  #game-instruction {
     font-size: 16px;
     padding-top: 20px;
     margin-top: 15px;
