@@ -1,14 +1,10 @@
 // hangman game
-
 window.onload = resetGame();
-
 var gameAnswerLetters;
 var hiddenAnswerLetters;
 var gameAnswer;
 var incorrectGuesses = 0;
 var correctLetters = 0;
-var won = 0;
-var lost = 0;
 var wrongLetters = 0;
 
 function resetGame() {
@@ -23,26 +19,23 @@ function resetGame() {
 function changeWord() {
   let score1 = document.getElementById("won").innerHTML;
   let score2 = document.getElementById("lost").innerHTML;
-  buildGame(score1, score2);
-  console.log("current score: " + score1 + " won, " + score2 + " lost" );
+  buildGame(won, lost);
+  console.log("current score: " + won + " won, " + lost + " lost" );
 }
 
 // buildGame recieves the won and lost values from resetGame, or checkWon fuction
 function buildGame(score1, score2) {
   buildKeyboard();
-
   won = score1;
   lost = score2;
   incorrectGuesses = 0;
   correctLetters = 0;
   wrongLetters = 0;
-
   document.getElementById("man").src = "assets/images/h0.png";
   document.getElementById("man").alt =
     incorrectGuesses + " of 5 lives used";
   document.getElementById("won").innerHTML = won;
   document.getElementById("lost").innerHTML = lost;
-
   //list of answers
   let allAnswers = [
     "mercury",
@@ -55,9 +48,7 @@ function buildGame(score1, score2) {
     "neptune",
     "pluto",
   ];
-
   console.log("the list of possible words are " + allAnswers);
-
   // selects one answer randomly
   let i = Math.floor(Math.random() * allAnswers.length);
   gameAnswer = allAnswers[i];
@@ -71,7 +62,6 @@ function buildGame(score1, score2) {
   // writes the hidden word on the screen
   document.getElementById("word").innerHTML = hiddenAnswerLetters.join("");
 }
-
 // function creates a keyboard layout
 function buildKeyboard() {
   // spits letters into individal arrays
@@ -97,7 +87,6 @@ function buildKeyboard() {
   // the letters are written onto the button
   document.getElementById("letters").innerHTML = keys;
 }
-
 // when a key is pressed, this function will disable the key
 function guessAnswer(key) {
   let guess = [];
@@ -116,7 +105,6 @@ function guessAnswer(key) {
     }
     i++;
   }
-
   // this checks if the word has been guessed, and will display a message, and give a new word to guess
   // won score increments
   if (gameAnswer == document.getElementById("word").innerHTML) {
@@ -125,10 +113,8 @@ function guessAnswer(key) {
     won = won + 1;
     changeWord();
   }
-
   // this loop searches if the key pressed matches any letters in the the game answer
   let wrongLetters = 0;
-
   i = 0;
   while (i < gameAnswer.length) {
     if (key !== gameAnswerLetters[i]) {
@@ -136,11 +122,9 @@ function guessAnswer(key) {
     }
     i++;
   }
-
   if (wrongLetters / gameAnswer.length == 1) {
     incorrectGuesses = incorrectGuesses + 1;
   }
-
   // for every wrong letter the hangman picture will advance (1 life lost)
   if (wrongLetters == gameAnswer.length) {
     console.log("current incorrect score is " + incorrectGuesses);
@@ -151,7 +135,6 @@ function guessAnswer(key) {
     document.getElementById("man").alt =
       incorrectGuesses + " of 5 lives used";
   }
-
   // if all lives are lost, then the game it will display a message that the user has lost, and give a new word
   // lost score increments
   if (incorrectGuesses == 6) {
