@@ -16,7 +16,7 @@ function initMap() {
 
   /* uses ISS image instead of default google marker */
 
-  let image = "assets/css/images/iss.png";
+  let image = "assets/images/iss.png";
 
   let marker = new google.maps.Marker({
     position: origin,
