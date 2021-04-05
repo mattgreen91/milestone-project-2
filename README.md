@@ -277,3 +277,12 @@ each game how was made one by one - what format vanilla? json? etc.
 also mention about wireframes expiring, and issue with gitpod not saving to github after push... had to save all files after and push manually... commits were showing in github but files not updated...
 
 navigation rocket image  https://www.pngkey.com/detail/u2q8q8a9r5o0u2r5_emojione-1f680-rocket-emoji-png/
+
+
+to get API key : https://developers.google.com/maps and press get started
+
+error 404 image taken from https://www.vecteezy.com/vector-art/541659-earth-and-moon-space-scene
+
+CSS added into header of 404 page in case issue with CSS file - 404 page does not rely on any other assets except the image.
+
+deployment github pages
