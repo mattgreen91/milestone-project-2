@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   text-align: center;
   font-family: 'Comfortaa', cursive;
-  background: url("../images/space-300.png");
+  background: url("../images/space.png");
   margin: 0;
   padding: 0;
 }
@@ -243,7 +243,7 @@ li.dropdown {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: url("../images/space-300.png");
+  background: url("../images/space.png");
   animation: stars_moving 10s linear infinite;
 }
 
@@ -547,7 +547,7 @@ li.dropdown {
 }
 
 .solar-jupiter {
-  background: url("../images/jupiter-250.png");
+  background: url("../images/jupiter.png");
   background-size: contain;
   position: relative;
   padding: 0 0 0 0;
@@ -563,7 +563,7 @@ li.dropdown {
 }
 
 .solar-saturn {
-  background: url("../images/saturn-300.png");
+  background: url("../images/saturn.png");
   background-size: contain;
   position: relative;
   padding: 0 0 0 0;
@@ -579,7 +579,7 @@ li.dropdown {
 }
 
 .solar-uranus {
-  background: url("../images/uranus-trans.png");
+  background: url("../images/uranus_trans.png");
   background-size: contain;
   position: relative;
   padding: 0 0 0 0;
