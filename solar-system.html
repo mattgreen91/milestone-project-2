@@ -17,7 +17,7 @@
           <img
             class="logo"
             src="assets/images/space_logo.png"
-            alt="logo"
+            alt="space is fun"
             onclick="location.href='index.html';"
           />
         </div>
@@ -51,7 +51,7 @@
         </div>
         <!-- mobile navigation menu -->
         <div class="mobile-nav" onclick="openMenu()">
-          <img id="nav-rocket" src="assets/images/rocket_logo.png" alt="menu" />
+          <img id="nav-rocket" src="assets/images/rocket_logo.png" alt="menu button" />
           <div id="mobile-nav-menu">
             <ul>
               <li onclick="location.href='index.html';">Home Page</li>
@@ -73,7 +73,7 @@
     <div class="pop-ups">
       <!-- pop up card for sun -->
       <div id="sun" class="pop-up-card" onclick="close_sun()">
-        <span class="close-window" onclick="close_sun()">&times;</span>
+        <span class="close-window" onclick="close_sun()" aria-hidden="true">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
             <img
@@ -84,7 +84,7 @@
           </div>
           <div class="planet-title">The Sun</div>
         </div>
-        <div class="planet-description">
+        <div class="planet-description" role="alert">
           <table>
             <tr>
               <th>Diameter:</th>
@@ -116,7 +116,7 @@
             </tr>
           </table>
         </div>
-        <div class="planet-description-vertical">
+        <div class="planet-description-vertical" role="alert">
           Diameter:
           <br />1,392,700 km<br /><br />
           Mass:
@@ -135,7 +135,7 @@
       </div>
       <!-- pop up card for mercury -->
       <div id="mercury" class="pop-up-card" onclick="close_mercury()">
-        <span class="close-window" onclick="close_mercury()">&times;</span>
+        <span class="close-window" onclick="close_mercury()" aria-hidden="true">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
             <img
@@ -146,7 +146,7 @@
           </div>
           <div class="planet-title">Mercury</div>
         </div>
-        <div class="planet-description">
+        <div class="planet-description" role="alert">
           <table>
             <tr>
               <th>Diameter:</th>
@@ -178,7 +178,7 @@
             </tr>
           </table>
         </div>
-        <div class="planet-description-vertical">
+        <div class="planet-description-vertical" role="alert">
           Diameter:<br />
           4,879 km<br /><br />
           Mass:<br />
@@ -197,7 +197,7 @@
       </div>
       <!-- pop up card for venus -->
       <div id="venus" class="pop-up-card" onclick="close_venus()">
-        <span class="close-window" onclick="close_venus()">&times;</span>
+        <span class="close-window" onclick="close_venus()" aria-hidden="true">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
             <img
@@ -208,7 +208,7 @@
           </div>
           <div class="planet-title">Venus</div>
         </div>
-        <div class="planet-description">
+        <div class="planet-description" role="alert">
           <table>
             <tr>
               <th>Diameter:</th>
@@ -240,7 +240,7 @@
             </tr>
           </table>
         </div>
-        <div class="planet-description-vertical">
+        <div class="planet-description-vertical" role="alert">
           Diameter:<br />
           12,104 km<br /><br />
           Mass:<br />
@@ -259,7 +259,7 @@
       </div>
       <!-- pop up card for earth -->
       <div id="earth" class="pop-up-card" onclick="close_earth()">
-        <span class="close-window" onclick="close_earth()">&times;</span>
+        <span class="close-window" onclick="close_earth()" aria-hidden="true">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
             <img
@@ -270,7 +270,7 @@
           </div>
           <div class="planet-title">Earth</div>
         </div>
-        <div class="planet-description">
+        <div class="planet-description" role="alert">
           <table>
             <tr>
               <th>Diameter:</th>
@@ -302,7 +302,7 @@
             </tr>
           </table>
         </div>
-        <div class="planet-description-vertical">
+        <div class="planet-description-vertical" role="alert">
           Diameter:<br />
           12,756 km<br /><br />
           Mass:<br />
@@ -321,14 +321,14 @@
       </div>
       <!-- pop up card for mars -->
       <div id="mars" class="pop-up-card" onclick="close_mars()">
-        <span class="close-window" onclick="close_mars()">&times;</span>
+        <span class="close-window" onclick="close_mars()" aria-hidden="true">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
             <img src="assets/images/mars.png" alt="mars" class="planet-pic" />
           </div>
           <div class="planet-title">Mars</div>
         </div>
-        <div class="planet-description">
+        <div class="planet-description" role="alert">
           <table>
             <tr>
               <th>Diameter:</th>
@@ -360,7 +360,7 @@
             </tr>
           </table>
         </div>
-        <div class="planet-description-vertical">
+        <div class="planet-description-vertical" role="alert">
           Diameter:<br />
           6,779 km<br /><br />
           Mass:<br />
@@ -379,7 +379,7 @@
       </div>
       <!-- pop up card for jupiter -->
       <div id="jupiter" class="pop-up-card" onclick="close_jupiter()">
-        <span class="close-window" onclick="close_jupiter()">&times;</span>
+        <span class="close-window" onclick="close_jupiter()" aria-hidden="true">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
             <img
@@ -390,7 +390,7 @@
           </div>
           <div class="planet-title">Jupiter</div>
         </div>
-        <div class="planet-description">
+        <div class="planet-description" role="alert">
           <table>
             <tr>
               <th>Diameter:</th>
@@ -422,7 +422,7 @@
             </tr>
           </table>
         </div>
-        <div class="planet-description-vertical">
+        <div class="planet-description-vertical" role="alert">
           Diameter:<br />
           142,984 km<br /><br />
           Mass:<br />
@@ -441,7 +441,7 @@
       </div>
       <!-- pop up card for saturn -->
       <div id="saturn" class="pop-up-card" onclick="close_saturn()">
-        <span class="close-window" onclick="close_saturn()">&times;</span>
+        <span class="close-window" onclick="close_saturn()" aria-hidden="true">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
             <img
@@ -452,7 +452,7 @@
           </div>
           <div class="planet-title">Saturn</div>
         </div>
-        <div class="planet-description">
+        <div class="planet-description" role="alert">
           <table>
             <tr>
               <th>Diameter:</th>
@@ -484,7 +484,7 @@
             </tr>
           </table>
         </div>
-        <div class="planet-description-vertical">
+        <div class="planet-description-vertical" role="alert">
           Diameter:<br />
           116,460 km<br /><br />
           Mass:<br />
@@ -503,7 +503,7 @@
       </div>
       <!-- pop up card for uranus -->
       <div id="uranus" class="pop-up-card" onclick="close_uranus()">
-        <span class="close-window" onclick="close_uranus()">&times;</span>
+        <span class="close-window" onclick="close_uranus()" aria-hidden="true">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
             <img
@@ -514,7 +514,7 @@
           </div>
           <div class="planet-title">Uranus</div>
         </div>
-        <div class="planet-description">
+        <div class="planet-description" role="alert">
           <table>
             <tr>
               <th>Diameter:</th>
@@ -546,7 +546,7 @@
             </tr>
           </table>
         </div>
-        <div class="planet-description-vertical">
+        <div class="planet-description-vertical" role="alert">
           Diameter:<br />
           50,742 km<br /><br />
           Mass:<br />
@@ -565,7 +565,7 @@
       </div>
       <!-- pop up card for neptune -->
       <div id="neptune" class="pop-up-card" onclick="close_neptune()">
-        <span class="close-window" onclick="close_neptune()">&times;</span>
+        <span class="close-window" onclick="close_neptune()" aria-hidden="true">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
             <img
@@ -576,7 +576,7 @@
           </div>
           <div class="planet-title">Neptune</div>
         </div>
-        <div class="planet-description">
+        <div class="planet-description" role="alert">
           <table>
             <tr>
               <th>Diameter:</th>
@@ -608,7 +608,7 @@
             </tr>
           </table>
         </div>
-        <div class="planet-description-vertical">
+        <div class="planet-description-vertical" role="alert">
           Diameter:<br />
           49,244 km<br /><br />
           Mass:<br />
@@ -627,7 +627,7 @@
       </div>
       <!-- pop up card for pluto -->
       <div id="pluto" class="pop-up-card" onclick="close_pluto()">
-        <span class="close-window" onclick="close_pluto()">&times;</span>
+        <span class="close-window" onclick="close_pluto()" aria-hidden="true">&times;</span>
         <div class="planet-top flex-row">
           <div class="planet-pic-outer">
             <img
@@ -638,7 +638,7 @@
           </div>
           <div class="planet-title">Pluto</div>
         </div>
-        <div class="planet-description">
+        <div class="planet-description" role="alert">
           <table>
             <tr>
               <th>Diameter:</th>
@@ -670,7 +670,7 @@
             </tr>
           </table>
         </div>
-        <div class="planet-description-vertical">
+        <div class="planet-description-vertical" role="alert">
           Diameter:<br />
           2,376 km<br /><br />
           Mass:<br />
@@ -691,16 +691,16 @@
     <!-- main planet buttons images/buttons below -->
     <div class="flex-row solar-outer">
       <div class="solar-large">
-        <div class="solar-sun" onclick="sun()"></div>
-        <div class="solar-mercury" onclick="mercury()"></div>
-        <div class="solar-venus" onclick="venus()"></div>
-        <div class="solar-earth" onclick="earth()"></div>
-        <div class="solar-mars" onclick="mars()"></div>
-        <div class="solar-jupiter" onclick="jupiter()"></div>
-        <div class="solar-saturn" onclick="saturn()"></div>
-        <div class="solar-uranus" onclick="uranus()"></div>
-        <div class="solar-neptune" onclick="neptune()"></div>
-        <div class="solar-pluto" onclick="pluto()"></div>
+        <div class="solar-sun" onclick="sun()" aria-label="sun"></div>
+        <div class="solar-mercury" onclick="mercury()" aria-label="mercury"></div>
+        <div class="solar-venus" onclick="venus()" aria-label="venus"></div>
+        <div class="solar-earth" onclick="earth()" aria-label="earth"></div>
+        <div class="solar-mars" onclick="mars()" aria-label="mars"></div>
+        <div class="solar-jupiter" onclick="jupiter()" aria-label="jupiter"></div>
+        <div class="solar-saturn" onclick="saturn()" aria-label="saturn"></div>
+        <div class="solar-uranus" onclick="uranus()" aria-label="uranus"></div>
+        <div class="solar-neptune" onclick="neptune()" aria-label="neptune"></div>
+        <div class="solar-pluto" onclick="pluto()" aria-label="pluto"></div>
       </div>
     </div>
     <!-- banner will display when Javascript disabled in browser -->
