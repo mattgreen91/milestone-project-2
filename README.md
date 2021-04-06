@@ -8,11 +8,11 @@ I have chosen to design a website for young explorers, which displays informatio
 
  _**You can access the completed website by [clicking here](https://mattgreen91.github.io/milestone-project-2/index.html) :rocket:**_
 
-The website was created using HTML5, CSS, Javascript, JQuery, JSON and external APIs and Plug-ins.
+The website was created using HTML5, CSS, Javascript, JQuery, JSON and external APIs and Libraries.
 
 The website has been designed and tested to be fully functional on all devices, including a drop-down mobile navigation menu for smaller devices.
 
-<img src="assets/readme-files/example-1.png" width="800" style="margin: 0;"> <img src="assets/readme-files/example-2.png" width="200" style="margin: 0;"> <img src="assets/readme-files/example-3.png" width="600" style="margin: 0;">
+<img src="assets/readme-files/screenshots.png" width="800" style="margin: 0;">
  
 ## Contents Page
 
@@ -53,9 +53,9 @@ There is also animations and hover effects to make the page more fun.
 
 This project was designed with Balsamiq Wireframes, which can be seen below:
 
-<img src="assets/readme-files/wireframe_1.png" width="1000" style="margin: 0;">
+<img src="assets/readme-files/wireframe_1.png" width="800" style="margin: 0;">
 
-<img src="assets/readme-files/wireframe_2.png" width="1000" style="margin: 0;">
+<img src="assets/readme-files/wireframe_2.png" width="800" style="margin: 0;">
 
 At first I created the basic layout by making a boilerplate, that you can find [here](assets/boilerplate/boilerplate.html).
 
@@ -65,13 +65,13 @@ Although my project only required me to use either Vanilla Javascript, JQuery, J
 
 The planet page was made using excel. assets/readme-files/planet_grid.xlsx
 
-<img src="assets/readme-files/planet_4.png" width="500" style="margin: 0;">
+<img src="assets/readme-files/planet_1.png" width="500" style="margin: 0;">
 
-<img src="assets/readme-files/planet_1.png" width="500" style="margin: 0;"> 
-
-<img src="assets/readme-files/planet_2.png" width="500" style="margin: 0;">
+<img src="assets/readme-files/planet_2.png" width="500" style="margin: 0;"> 
 
 <img src="assets/readme-files/planet_3.png" width="500" style="margin: 0;">
+
+<img src="assets/readme-files/planet_4.png" width="500" style="margin: 0;">
 
 **Accessibility**
 
@@ -79,9 +79,15 @@ The project has many features such as:
 
 * Fall-back fonts, in case Google Fonts are not compatible with the browser
 * Alternate Text' attributes for images, in case the images do not display
+<img src="assets/readme-files/alt_labels.png" width="300" style="margin: 0;">
 * Banner displays at the top of the screen when Javascript disabled in browser, prompting user to enable
-* 'ARIA Hidden' attributes (Accessible Rich Internet Applications), and 'Screen-Reader Only' attributes to make it easier for Screen Readers
+<img src="assets/readme-files/alert_banner.png" width="300" style="margin: 0;">
 * @media Queries, to modify content to fit different sized screens
+* 'ARIA Hidden' attributes (Accessible Rich Internet Applications), and 'ARIA Label' attributes to make it easier for Screen Readers
+<img src="assets/readme-files/aria_hidden_1.png" width="300" style="margin: 0;"><img src="assets/readme-files/aria_hidden_2.png" width="300" style="margin: 0;"><img src="assets/readme-files/aria_label.png" width="300" style="margin: 0;">
+Also, I downloaded 'Screen Reader' extension for Google Chrome which can be found [here](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en)
+I used this for testing the screen reader, so I know if I need to put aria-hidden where not relevent, and aria-labels where needing to read to the user.
+<img src="assets/readme-files/screen_reader.png" width="300" style="margin: 0;">
 
 ## 2. Features
 
@@ -97,7 +103,11 @@ The main features of this project are:
 - Animations
 
 ### Features Left to Implement
-- The memory game needs configuring to work more cards on larger screen.
+- The memory game needs configuring to work more cards on larger screen, as the number of cards is set inside the script tag, this was not done.
+<img src="assets/readme-files/planet_4.png" width="500" style="margin: 0;">
+As you can see, the column count is set in the script tag.  This is a library plugin, so the code is already created. When I tried to make multiple scripts for different screen sizes it was causing issues, as the script only loads once.
+Therefore, I have only set it up for 2 columns, which will cover smaller device sizes.  But to improve performance, it would be better to have more columns for larger screens.
+- 
 
 ## 3. Technologies Used
 
@@ -135,11 +145,7 @@ This website has been fully tested and is working correctly.  There were some bu
 
 I used the Google Chrome and Mozilla FireFox developer tools to tweak code when testing.
 
-<img src="assets/readme-files/testing-1.png" width="1000" style="margin: 0;">
 
-<img src="assets/readme-files/testing-2.png" width="1000" style="margin: 0;">
-
-<img src="assets/readme-files/testing-3.png" width="1000" style="margin: 0;">
 
 The HTML5 Code was put through the official validator, which currently has no errors.
 
@@ -151,36 +157,9 @@ The CSS3 Code was put through the official validator, which currently has no err
 
 Main Areas of Testing:
 
- 1. Colours consistent throughout.
- 2. Layout consistent, and content moves neatly across multiple screen sizes and devices.
- 3. Fonts are consistently sized, and fonts are consistent throughout.
- 4. Logo at top is clear, consistent size, and links to home page.
- 5. Navigation Menu is consistently sized across all pages, displaying icons, and the colours of the navigation links change when mouse hovers over.
- 6. Navigation Menu links open correct pages, and pop ups easily closed.
- 7. ......
- 8. ......
- 9. ......
-10. Toggle Button for Mobile Navigation Menu brings down navigation links. 
-11. Mobile Navigation Menu is fully reponsive with the same steps 5-7 above.
-12. ......
-13. Mobile Navigation ..... to make navigation easier on smaller devices. 
-14. ......
-15. .......
-16. ......
-17. .......
-18. ..........
-19. ........
-20. ........
-21. ........
-22. .......
-23. .......
-24. ........
-25. ........
-26. ........
-27. data validation text box
-28. When the form is complete, and the 'Check Message' button is pressed, the page will clear the data.
-29. All content on all pages is clearly visible on all screen sizes, using [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en) (Google Chrome Extension).
-30. All HTML5 and CSS3 code run through official W3C validator.
+
+
+Bugs
 
 ## 5. Deployment
 
