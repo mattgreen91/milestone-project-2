@@ -248,8 +248,8 @@ I used the Google Chrome and Mozilla FireFox developer tools to tweak code when 
 **Main Areas of Testing**
 
 I did both manual and automated testing for the website. 
-- The manual testing can be opened by clicking [here](assets/manual_testing.pdf).
-- The automated testing can be opened by clicking [here](assets/automated_testing.pdf).
+- The manual testing can be opened by clicking [here](assets/readme-files/manual_testing.pdf).
+- The automated testing can be opened by clicking [here](assets/readme-files/automated_testing.pdf).
 
 **Bugs Found**
 
