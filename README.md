@@ -241,7 +241,7 @@ In order to construct this project, the below technologies were used:
 
 ## 4. Testing
 
-This website has been fully tested and is working correctly.  There were some bugs that I had overcome, which you can see by [clicking here](assets/readme-files/issues-experienced.pdf).
+This website has been fully tested and is working correctly.  
 
 I used the Google Chrome and Mozilla FireFox developer tools to tweak code when testing.
 
