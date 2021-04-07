@@ -245,19 +245,11 @@ This website has been fully tested and is working correctly.  There were some bu
 
 I used the Google Chrome and Mozilla FireFox developer tools to tweak code when testing.
 
-The HTML5 Code was put through the official validator, which currently has no errors.
-
-<img src="assets/readme-files/html5-validator.png" width="1000" style="margin: 0;">
-
-The CSS3 Code was put through the official validator, which currently has no errors.
-
-<img src="assets/readme-files/css-validator.png" width="1000" style="margin: 0;">
-
 **Main Areas of Testing**
 
 I did both manual and automated testing for the website. 
-- The manual testing can be opened by clicking [here](assets/boilerplate/manual_testing.pdf).
-- The automated testing can be opened by clicking [here](assets/boilerplate/automated_testing.pdf).
+- The manual testing can be opened by clicking [here](assets/manual_testing.pdf).
+- The automated testing can be opened by clicking [here](assets/automated_testing.pdf).
 
 **Bugs Found**
 
